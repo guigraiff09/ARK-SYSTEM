@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #000;
+    width: 100%;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/*==================================
+HEADER
+==================================*/
+
+.header-box {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 20px;
+    background: #000;
+    border-bottom: 1px solid #1a1a2e;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar ul {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.item a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+}
+
+.item img {
+    cursor: pointer;
+}
+
+.destaque {
+    color: #ffc300;
+}
+
+/*==================================
+SEARCH BOX
+==================================*/
+
+.search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search-box input {
+    width: 35rem;
+    padding: 1rem 4rem 1rem 1rem;
+    border-radius: 10px;
+    background: #1a1a2e;
+    color: #fff;
+    border: 1px solid #7c3aed;
+}
+
+.search-box input::placeholder {
+    color: #aaa;
+}
+
+.lupa {
+    position: absolute;
+    right: 15px;
+    width: 20px;
+    cursor: pointer;
+}
+
+/*==================================
+SIDEBAR menu lateral
+==================================*/
+
+.sidebar {
+    position: fixed;
+    top: 100px;
+    left: 0;
+    width: 280px;
+    height: 100vh;
+    padding: 20px;
+    background: #000;
+    overflow-y: auto;
+}
+
+.menu-lateral {
+    width: 100%;
+    padding: 0 0 100px;
+}
+
+.Principal {
+    width: 100%;
+}
+
+.Principal li {
+    margin-bottom: 8px;
+}
+
+.Principal a {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.Principal a:hover {
+    background: #7c3aed;
+}
+
+/*==================================
+TITULO CATEGORIAS
+==================================*/
+
+.titulo-categoria {
+    color: #7c3aed;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    padding-left: 12px;
+}
+
+/*==================================
+PREMIUM BOX
+==================================*/
+
+.premium-box {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+    border: 1px solid #7c3aed;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.premium-box h2 {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.premium-box p {
+    color: #ccc;
+    text-align: center;
+    font-size: 14px;
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.premium-box button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.premium-box button:hover {
+    background: #9333ea;
+}
+
+/*===========================
+Carrossel 
+===========================*/
+
+.container-card {
+    position: relative;
+    overflow: hidden;
+    margin-top: 110px;
+    margin-left: 300px;
+}
+
+.card {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    transition: transform 0.6s ease-in-out;
+    padding: 0 20px 0 0;
+}
+
+.card img {
+    width: 80rem;
+    height: 50vh;
+    flex-shrink: 0;
+}
+
+.card figcaption{
+    color: #fff;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    z-index: 10;
+    flex-wrap: wrap;
+}
+
+/*=============================================
+Texto que fica em cima da imagem Principal
+=============================================*/
+.dest{
+     color: #7c3aed;
+     border: 1px solid #7c3aed;
+     padding: 8px;
+     border-radius: 5px;
+}
+
+.card figcaption h1{
+    font-size: 3rem;
+}
+
+.card .solo-p{
+    color: #7c3aed;
+}
+
+.card .solo-p1{
+    width: 18rem;
+}
+/*=================================
+botão da imagem Pricipal
+=================================*/
+.button-assitir{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    border: 2px solid transparent;
+    border-radius: 5px;
+    background-color: #7c3aed;
+    padding: 8px;
+}
+
+.button-assitir a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    color: #fff;
+    outline: none;
+}
+
+.saiba{
+    position: absolute;
+    top: 55.8%;
+    left: 34%;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 8px;
+}
+
+.saiba a{
+    color: #fff;
+    outline: none;
+}
