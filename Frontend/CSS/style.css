@@ -256,7 +256,7 @@ Texto que fica em cima da imagem Principal
 /*=================================
 botão da imagem Pricipal
 =================================*/
-.button-assitir{
+.button-assistir{
     position: absolute;
     top: 80%;
     left: 5%;
@@ -266,19 +266,24 @@ botão da imagem Pricipal
     padding: 8px;
 }
 
-.button-assitir a{
+.button-assistir a{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
     color: #fff;
     outline: none;
+    transition: 0.3s linear;
+}
+
+.button-assistir a:hover{
+    font-size: 0.9rem;
 }
 
 .saiba{
     position: absolute;
-    top: 55.8%;
-    left: 34%;
+    top: 80%;
+    left: 18%;
     border: 2px solid #fff;
     border-radius: 5px;
     background-color: transparent;
@@ -288,4 +293,8 @@ botão da imagem Pricipal
 .saiba a{
     color: #fff;
     outline: none;
+}
+
+.saiba a:hover{
+    font-size: 0.9rem;
 }
