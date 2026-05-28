@@ -58,8 +58,9 @@ HEADER
     color: #fff;
 }
 
-.item img {
+.item i {
     cursor: pointer;
+    font-size: 25px;
 }
 
 .destaque {
@@ -205,7 +206,7 @@ Carrossel
 .container-card {
     position: relative;
     overflow: hidden;
-    margin-top: 110px;
+    margin-top: 100px;
     margin-left: 300px;
 }
 
@@ -226,10 +227,12 @@ Carrossel
 .card figcaption{
     color: #fff;
     position: absolute;
-    top: 20%;
+    top: 15%;
     left: 5%;
     z-index: 10;
     flex-wrap: wrap;
+    padding: 0.9rem 0;
+    
 }
 
 /*=============================================
@@ -256,14 +259,14 @@ Texto que fica em cima da imagem Principal
 /*=================================
 botão da imagem Pricipal
 =================================*/
-.button-assistir{
+.container-card .button-assistir{
     position: absolute;
-    top: 80%;
-    left: 5%;
+    top: 100%;
+    left: 2%;
     border: 2px solid transparent;
     border-radius: 5px;
     background-color: #7c3aed;
-    padding: 8px;
+    padding: 5px;
 }
 
 .button-assistir a{
@@ -279,15 +282,17 @@ botão da imagem Pricipal
 .button-assistir a:hover{
     font-size: 0.9rem;
 }
-
-.saiba{
+.button-assistir i{
+    font-size: 25px;
+}
+.container-card .saiba{
     position: absolute;
-    top: 80%;
-    left: 18%;
+    top: 100%;
+    left: 50%;
     border: 2px solid #fff;
     border-radius: 5px;
     background-color: transparent;
-    padding: 8px;
+    padding: 6.3px;
 }
 
 .saiba a{
