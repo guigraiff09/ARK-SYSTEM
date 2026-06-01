@@ -79,7 +79,6 @@ SEARCH BOX
 /*==================================
 SIDEBAR menu lateral
 ==================================*/
-
 .sidebar {
     position: fixed;
     top: 150px;
@@ -88,6 +87,9 @@ SIDEBAR menu lateral
     height: 100vh;
     padding: 20px;
     background: #000;
+
+    /* Linha vertical */
+    border-right: 2px solid #333;
 }
 
 .menu-lateral {
