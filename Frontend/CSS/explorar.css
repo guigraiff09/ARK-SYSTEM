@@ -38,9 +38,11 @@ body {
     display: flex;
     align-items: center;
     gap: 2rem;
+    justify-content: center;
 }
 .logo{
     margin-right: right;
+    padding: 2rem 0 0;
 }
 /*==================================
 SEARCH BOX
@@ -51,8 +53,7 @@ SEARCH BOX
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 0;
-
+    padding: 3rem 0;
 }
 
 .search-box input {
@@ -81,13 +82,12 @@ SIDEBAR menu lateral
 
 .sidebar {
     position: fixed;
-    top: 100px;
+    top: 150px;
     left: 0;
     width: 280px;
     height: 100vh;
     padding: 20px;
     background: #000;
-    overflow-y: auto;
 }
 
 .menu-lateral {
@@ -109,7 +109,7 @@ SIDEBAR menu lateral
     align-items: center;
     gap: 12px;
     color: #fff;
-    padding: 12px;
+    padding: 1rem;
     border-radius: 8px;
 }
 
@@ -135,12 +135,11 @@ PREMIUM BOX
 ==================================*/
 
 .premium-box {
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 20px;
     background: #111;
     border: 1px solid #7c3aed;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,6 +184,7 @@ PREMIUM BOX
     display: flex;
     align-items: center;
     justify-content: center;
+    
    
 }
 
