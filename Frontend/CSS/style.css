@@ -114,11 +114,12 @@ SIDEBAR menu lateral
     position: fixed;
     top: 100px;
     left: 0;
-    width: 280px;
+    width: 250px;
     height: 100vh;
     padding: 20px;
     background: #000;
     overflow-y: auto;
+    border-right: 2px solid #333;
 }
 
 .menu-lateral {
@@ -166,8 +167,8 @@ PREMIUM BOX
 ==================================*/
 
 .premium-box {
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 8rem;
+    padding: 20px ;
     background: #111;
     border: 1px solid #7c3aed;
     border-radius: 10px;
@@ -215,9 +216,10 @@ Carrossel
 .container-card {
     position: relative;
     margin-top: 100px;
-    margin-left: 280px;
+    margin-left: 250px;
     width: calc(100% - 280px);
     overflow: hidden;
+    width: 100%;
 }
 
 .card {
