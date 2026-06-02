@@ -359,6 +359,7 @@ figcaption h1 {
     object-fit: cover;
     border-radius: 15px;
     display: block;
+    cursor: pointer;
 }
 
 .badge-nota{
@@ -373,14 +374,14 @@ figcaption h1 {
 
 .legenda{
     position: absolute;
-    top: 85%;
+    top: 93%;
     left: 14%;
     z-index: 10;
 }
 
 .temporada{
-    background: rgba(0,0,0,.6);
-    padding: 2px 15px;
+    background: rgba(0,0,0,.8);
+    padding: 4px 15px;
     border-radius: 10px;
     color: #fff;
 }

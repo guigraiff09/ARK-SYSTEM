@@ -19,6 +19,17 @@ body {
     overflow-x: hidden;
 }
 
+.header-box {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    padding: 5px 0;
+    background: #000;
+    border-bottom: 1px solid #1a1a2e;
+}
+
 .menu {
     display: flex;
     align-items: center;
@@ -29,8 +40,8 @@ body {
     display: flex;
     align-items: center;
     position: relative;
-    width: 77%;
-    height: 60px;
+    width: 63%;
+    height: 50px;
     justify-content: center;
 }
 
@@ -42,7 +53,7 @@ body {
 }
 .logo{
     margin-right: right;
-    padding: 2rem 0 0;
+    padding: 1rem 0 0;
 }
 /*==================================
 SEARCH BOX
@@ -53,7 +64,6 @@ SEARCH BOX
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 3rem 0;
 }
 
 .search-box input {
@@ -81,13 +91,12 @@ SIDEBAR menu lateral
 ==================================*/
 .sidebar {
     position: fixed;
-    top: 150px;
+    top: 105px;
     left: 0;
     width: 280px;
     height: 100vh;
     padding: 20px;
     background: #000;
-
     /* Linha vertical */
     border-right: 2px solid #333;
 }
@@ -137,7 +146,7 @@ PREMIUM BOX
 ==================================*/
 
 .premium-box {
-    margin-top: 60px;
+    margin-top: 10px;
     padding: 20px;
     background: #111;
     border: 1px solid #7c3aed;
@@ -182,10 +191,10 @@ PREMIUM BOX
     width: 100%;
     max-width: 1700px;
     margin: auto;
-    padding: 5rem 0;
+    padding: 10rem 0 0;
     display: flex;
     align-items: center;
-    justify-content: center;
+    margin-left: 357px;
     
    
 }
@@ -216,7 +225,7 @@ PREMIUM BOX
 }
 
 .navb a img{
-    font-size: 1.8rem;
+    font-size: 1.6rem;
 }
 
 /* Dropdown */
@@ -243,7 +252,7 @@ PREMIUM BOX
     background: transparent;
     list-style: none;
     min-width: 16px;
-    padding: 15px 0;
+    padding: 10px 0;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.2);
     z-index: 999;
@@ -255,8 +264,7 @@ PREMIUM BOX
 
 .dropdown-menu li{
     width: 100%;
-    
-    padding: 0.3rem 0;
+    padding: 0.2rem 0;
 }
 
 .dropdown-menu li a{
@@ -275,4 +283,60 @@ PREMIUM BOX
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+}
+
+.container-card{
+    position: relative;
+    margin-left: 350px;
+    margin-top: 60px;
+    width: calc(100% - 280px);
+    overflow: hidden;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+}
+
+.card{
+    transition: transform 0.6s ease-in-out;
+    padding: 30px 20px;
+}
+
+.card figure{
+    min-width: 100%;
+    position: relative;
+    
+}
+
+.card img{
+    border-radius: 13px;
+    height: 250px;
+    width: 180px;
+    object-fit: cover;
+    cursor: pointer;
+    display: block;
+}
+.badge-nota{
+    position: absolute;
+    top: 8%;
+    left: 1%;
+    background: rgba(0,0,0,.6);
+    padding: 2px 15px;
+    border-radius: 10px;
+    color: #fff;
+
+}
+.temporada{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+    background: rgba(0,0,0, 0.8);
+    padding: 4px 15px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.nome-anime{
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 200;
 }
