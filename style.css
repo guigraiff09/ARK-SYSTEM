@@ -64,17 +64,15 @@ HEADER
     transition: 0.3s ease;
     display: flex;
     align-items: center;
+    transition: 0.7s ease;
 }
 
 .destaque {
     color: #ffc300;
     font-size: 20px;
 }
-.destaque:hover{
-    font-size: 1.5rem;
-}
 .item a i:hover{
-    font-size: 1.9rem;
+    transform: scale(1.2);
 }
 /*==================================
 SEARCH BOX
@@ -114,11 +112,13 @@ SIDEBAR menu lateral
     position: fixed;
     top: 100px;
     left: 0;
-    width: 280px;
+    width: 250px;
     height: 100vh;
     padding: 20px;
     background: #000;
     overflow-y: auto;
+    border-right: 2px solid #333;
+    transition: 0.7s ease;
 }
 
 .menu-lateral {
@@ -142,10 +142,12 @@ SIDEBAR menu lateral
     color: #fff;
     padding: 12px;
     border-radius: 8px;
+    transition: 0.7s ease;
 }
 
 .Principal a:hover {
     background: #7c3aed;
+    transform: scale(1.1);
 }
 
 /*==================================
@@ -166,16 +168,16 @@ PREMIUM BOX
 ==================================*/
 
 .premium-box {
-    margin-top: 30px;
-    padding: 20px;
+    margin-top: 2rem;
+    padding: 20px ;
     background: #111;
     border: 1px solid #7c3aed;
     border-radius: 10px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.7s ease;
 }
 
 .premium-box h2 {
@@ -183,12 +185,13 @@ PREMIUM BOX
     display: flex;
     align-items: center;
     gap: 10px;
-    font-size: 1.1rem;
+    font-size: 1rem;
+   
 }
 
 .premium-box p {
     color: #ccc;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
     margin: 15px 0;
     line-height: 1.5;
@@ -202,10 +205,12 @@ PREMIUM BOX
     color: #fff;
     font-weight: 600;
     cursor: pointer;
+     transition: 0.7s ease;
 }
 
 .premium-box button:hover {
     background: #9333ea;
+    transform: scale(1.1);
 }
 
 /*===========================
@@ -215,9 +220,10 @@ Carrossel
 .container-card {
     position: relative;
     margin-top: 100px;
-    margin-left: 280px;
+    margin-left: 250px;
     width: calc(100% - 280px);
     overflow: hidden;
+    width: 100%;
 }
 
 .card {
@@ -309,12 +315,14 @@ figcaption h1 {
     color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
+    transition: 0.7s ease;
 }
 .button-assistir i{
     font-size: 25px;
 }
 .button-assistir:hover {
     background: #9333ea;
+     transform: scale(1.1);
 }
 
 .saiba {
@@ -322,11 +330,13 @@ figcaption h1 {
     color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
+    transition: 0.7s ease;
 }
 
 .saiba:hover {
     background: #fff;
     color: #000;
+    transform: scale(1.1);
 }
 
 .animes-box{
@@ -375,13 +385,13 @@ figcaption h1 {
 .legenda{
     position: absolute;
     top: 93%;
-    left: 14%;
+    left: 17%;
     z-index: 10;
 }
 
 .temporada{
     background: rgba(0,0,0,.8);
-    padding: 4px 15px;
+    padding: 4px 18px;
     border-radius: 10px;
     color: #fff;
 }
@@ -392,4 +402,267 @@ figcaption h1 {
     left: 5%;
     color: #fff;
     font-weight: 600;
+}
+
+/*Pagina do Explorar Dropdown*/
+
+
+.nav-bir{
+    width: 100%;
+    max-width: 1700px;
+    margin: auto;
+    padding: 10rem 0 0;
+    display: flex;
+    align-items: center;
+    margin-left: 290px;
+    
+   
+}
+
+.navb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navb li{
+    list-style: none;
+    display: inline-block;
+   padding: 0 0.5rem;
+}
+
+.navb a{
+    color: #fff;
+    font-size: 1.1rem;
+    text-align: left;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px;
+    background-color: #4d4d4d;
+    
+}
+
+.navb a img{
+    font-size: 1.6rem;
+}
+
+/* Dropdown */
+.dropdown{
+    position: relative;
+}
+
+.dropdown i{
+    font-size: 12px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+
+.dropdown:hover i{
+    transform: rotate(180deg);
+    color: #fff;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: transparent;
+    list-style: none;
+    min-width: 16px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
+
+.dropdown-menu li{
+    width: 100%;
+    padding: 0.2rem 0;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 10px 15px;
+    font-size: 14px;
+    color: #e2e2e2;
+    text-align: left;
+    transition: 0.7s ease;
+}
+
+.dropdown-menu li a:hover{
+    background: #7c3aed;
+    transform: scale(1.1);
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+
+/* Página de lançamento*/
+
+
+/* Container principal ajustado para Flexbox */
+.container-anime {
+   display: flex;
+   margin-left: 320px;
+   margin-top: 130px;
+   gap: 40px;
+}
+
+/* Ajustes na imagem */
+.imagem img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    border: 2px solid #4d4c4c;
+    border-radius: 10px;
+}
+
+/* Container de informações ao lado da imagem */
+.info-ani {
+   display: flex;
+   flex-direction: column;
+   font-size:1.2rem ;
+   max-width: 550px;
+}
+
+.anime-novo h1 {
+   color: #fff;
+   text-transform: capitalize;
+   
+}
+
+.anime-novo .titulo {
+color: #7c3aed;
+}
+
+.resumo-anime p {
+   color: #fff;
+   margin-top: 30px;
+}
+
+.botao-assistir{
+ position: relative;
+}
+
+.Assistir{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.Assistir button{
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.assit{
+    background-color: #7c3aed;
+}
+
+.assit a{
+    color: #fff;
+    font-size: 1.2rem;
+    transition: 1s ease;
+}
+.assit:hover{
+    transform: scale(1.1);
+}
+
+.favoritos{
+  position: relative;
+}
+.favoritos a {
+    color: #000;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: 1 ease;
+}
+
+.favoritos:hover{
+    transform: scale(1.1);
+}
+
+.conteudo-info{
+   margin-left: 320px;
+   margin-top: 50px;
+   display: flex;
+   align-items: flex-start;
+   flex-wrap: wrap;
+   background-color: #454545;
+   padding: 10px 20px;
+   border-radius: 10px;
+   gap: 40px;
+   display: inline-block;
+}
+
+.info{
+    color: #fff;
+    padding: 0 0 10px 0;
+
+}
+.info-anime{
+    display: inline-block;
+    vertical-align: top;
+    color: #fff;
+    max-width: 350px;
+    font-size:1.1rem ;
+    text-align: left;
+    padding: 0 10px;
+}
+
+.info-anime p {
+    display: block;
+    white-space: normal;
+    gap: 40px;
+    text-align: left;
+}
+.ani-Semelhante{
+    color: #aaa;
+}
+
+.linha{
+    width: 100%;
+    border: none;
+    border-top: 1px solid #222; 
+     margin: 30px 0;
+}
+/* card de semantes ao anime topo*/
+
+.ani-card{
+   display: flex;
+   margin-left: 30px;
+   margin-top: 0px;
+   gap: 40px;
+}
+
+.ani-card{
+    padding: 0px 15px;
+    background: transparent;
+}
+
+.ani-card figure{
+    position: relative;
+    width: 200px;
+}
+
+.ani-card a img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
 }

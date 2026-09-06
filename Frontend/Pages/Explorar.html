@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/explorar.css"> 
+    <link rel="stylesheet" href="/style.css">
+     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Explorar</title>
 </head>
+
 <body>
 
-     <!-- HEADER -->
+    <!-- HEADER -->
     <header class="header-box">
 
         <div class="menu">
 
-            <img src="../Assets/IMG/logo.png" alt="logo" width="160px" class="logo">
+            <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
 
             <nav class="nav-bar">
 
@@ -24,16 +27,41 @@
                         <img src="https://img.icons8.com/ios/50/ffffff/search--v1.png" alt="lupa" class="lupa">
                     </li>
 
+                    <li class="item">
+                        <a href="#">
+                            <i class='bx bxs-crown'><span class="destaque">Premium</span></i>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">
+                            <i class='bx bx-heart'></i>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">
+                            <i class='bx bx-bell'></i>
+                        </a>
+                    </li>
+
+                    <li class="item">
+                        <a href="#">
+                            <img src="/Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="50px">
+                        </a>
+                    </li>
+
                 </ul>
 
             </nav>
+
         </div>
 
     </header>
 
-       <!-- MENU LATERAL -->
+    <!-- MENU LATERAL -->
     <aside class="sidebar">
-        
+
         <div class="menu-lateral">
 
             <ul class="Principal">
@@ -80,154 +108,143 @@
                     </a>
                 </li>
 
-                
-            <!-- PREMIUM -->
-            <div class="premium-box">
 
-                <h2>
-                   <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
-                    Seja Premium
-                </h2>
+                <!-- PREMIUM -->
+                <div class="premium-box">
 
-                <p>
-                    Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                </p>
+                    <h2>
+                        <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
+                        Seja Premium
+                    </h2>
 
-                <button>Assine agora</button>
+                    <p>
+                        Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
+                    </p>
 
+                    <button>Assine agora</button>
+
+                </div>
+        </div>
+    </aside>
+    <div class="linha"></div>
+
+    <header class="menu">
+
+        <div class="nav-bir">
+
+            <nav class="navb">
+
+                <ul>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Gênero <i class='bx bx-chevron-down'></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Aventura</a></li>
+                            <li><a href="#">Romance</a></li>
+                            <li><a href="#">Fantasia</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Status <i class='bx bx-chevron-down'></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Em andamento</a></li>
+                            <li><a href="#">Finalizado</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle">
+                            Ordenar por <i class='bx bx-chevron-down'></i>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Mais recente</a></li>
+                            <li><a href="#">Mais popular</a></li>
+                            <li><a href="#">Melhor nota</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="animes-box">
+
+        <section>
+            <div class="animes">
+                <figure>
+                    <span class="badge-nota">4.8</span>
+                    <a href="#"> <img src="../Assets/IMG/DragonBall- Z.jpg" alt="DragonBall"></a>
+                    <figcaption class="legenda">
+                        <p class="temporada">1ª Temporada</p>
+                    </figcaption>
+                    <p class="nome-anime">DragonBall Z</p>
+                </figure>
             </div>
-        </div>
-    </aside><div class="linha"></div>
+        </section>
 
-     <header class="header">
+        <section>
+            <div class="animes">
+                <figure>
+                    <span class="badge-nota">4.8</span>
+                    <a href="#"> <img src="../Assets/IMG/flower.jpg" alt="DragonBall"></a>
+                    <figcaption class="legenda">
+                        <p class="temporada">1ª Temporada</p>
+                        <p class="nome-anime">Kaoru Hana wa Rin to Saku</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
 
-    <div class="nav-bir">
+        <section>
+            <div class="animes">
+                <figure>
+                    <span class="badge-nota">4.9</span>
+                    <a href="#"> <img src="../Assets/IMG/Mushoku-Tensei.jpg" alt="Mushoku-Tensei"></a>
+                    <figcaption class="legenda">
+                        <p class="temporada">1ª Temporada</p>
+                    </figcaption>
+                    <p class="nome-anime">Mushoku-Tensei</p>
+                </figure>
+            </div>
+        </section>
 
-        <nav class="navb">
+        <section>
+            <div class="animes">
+                <figure>
+                    <span class="badge-nota">4.3</span>
+                    <a href="#"> <img src="../Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man"></a>
+                    <figcaption class="legenda">
+                        <p class="temporada">1ª Temporada</p>
+                    </figcaption class="legenda">
+                    <p class="nome-anime">ChainSaw-Man</p>
+                </figure>
+            </div>
+        </section>
 
-            <ul>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        Gênero <i class='bx bx-chevron-down'></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Treino 1</a></li>
-                        <li><a href="#">Treino 2</a></li>
-                        <li><a href="#">Treino 3</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        Ano <i class='bx bx-chevron-down'></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="#">2025</a></li>
-                        <li><a href="#">2024</a></li>
-                        <li><a href="#">2023</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        Tipo <i class='bx bx-chevron-down'></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Filme</a></li>
-                        <li><a href="#">OVA</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        Status <i class='bx bx-chevron-down'></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Em andamento</a></li>
-                        <li><a href="#">Finalizado</a></li>
-                    </ul>
-                </li>
-
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle">
-                        Ordenar por <i class='bx bx-chevron-down'></i>
-                    </a>
-
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Mais recente</a></li>
-                        <li><a href="#">Mais popular</a></li>
-                        <li><a href="#">Melhor nota</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
-    </div>
-</header>
-
-    <div class="container-card">
-        <div class="card">
-            <figure>
-                <span class="badge-nota">4.8</span>
-               <a href="#"> <img src="../Assets/IMG/DragonBall- Z.jpg" alt="DragonBall"></a>
-                <figcaption>
-                    <p class="temporada">1ª Temporada</p>
-                </figcaption>
-                <p class="nome-anime">DragonBall Z</p>
-            </figure>
-        </div>
-
-    <div class="card">
-            <figure>
-                <span class="badge-nota">4.8</span>
-               <a href="#"> <img src="../Assets/IMG/flower.jpg" alt="DragonBall"></a>
-                <figcaption>
-                    <p class="temporada">1ª Temporada</p>
-                    <p class="nome-anime">Kaoru Hana wa Rin to Saku</p>
-                </figcaption>
-            </figure>
-        </div>
-
-    <div class="card">
-            <figure>
-                <span class="badge-nota">4.9</span>
-               <a href="#"> <img src="../Assets/IMG/Mushoku-Tensei.jpg" alt="Mushoku-Tensei"></a>
-                <figcaption>
-                    <p class="temporada">1ª Temporada</p>
-                </figcaption>
-                <p class="nome-anime">Mushoku-Tensei</p>
-            </figure>
-        </div>
-
-    <div class="card">
-            <figure>
-                <span class="badge-nota">4.3</span>
-               <a href="#"> <img src="../Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man"></a>
-                <figcaption>
-                    <p class="temporada">1ª Temporada</p>           
-                </figcaption>
-                <p class="nome-anime">ChainSaw-Man</p>
-            </figure>
-    </div>
-
-    <div class="card">
-            <figure>
-                <span class="badge-nota">4.6</span>
-               <a href="#"> <img src="../Assets/IMG/meninas.jpg" alt="Kanojo, Okarishimasu"></a>
-                <figcaption>
-                    <p class="temporada">1ª Temporada</p>
-                </figcaption>
-                <p class="nome-anime">Kanojo, Okarishimasu</p>
-            </figure>
-    </div>
+        <section>
+            <div class="animes">
+                <figure>
+                    <span class="badge-nota">4.6</span>
+                    <a href="#"> <img src="../Assets/IMG/meninas.jpg" alt="Kanojo, Okarishimasu"></a>
+                    <figcaption class="legenda">
+                        <p class="temporada">1ª Temporada</p>
+                    </figcaption class="legenda">
+                    <p class="nome-anime">Kanojo, Okarishimasu</p>
+                </figure>
+            </div>
+        </section>
 
     </div>
-    
+
 
 </body>
+
 </html>
