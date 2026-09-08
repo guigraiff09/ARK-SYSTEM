@@ -146,10 +146,20 @@ SIDEBAR menu lateral
 }
 
 .Principal a:hover {
-    background: #7c3aed;
+   background-color: #7c3aed;
     transform: scale(1.1);
 }
+.menu-list1 a{
+    background-color: #7c3aed;
+    color: #fff;
 
+}
+
+.menu-list2 a{
+    background-color: #7c3aed;
+    color: #fff;
+    text-align: left;
+}
 /*==================================
 TITULO CATEGORIAS
 ==================================*/
@@ -349,6 +359,7 @@ figcaption h1 {
     gap: 20px;
 }
 
+
 .animes-box section{
     width: fit-content;
 }
@@ -356,6 +367,7 @@ figcaption h1 {
 .animes{
     padding: 20px 15px;
     background: transparent;
+    transition: 0.5s ease;
 }
 
 .animes figure{
@@ -371,12 +383,14 @@ figcaption h1 {
     display: block;
     cursor: pointer;
 }
-
+.animes:hover{
+    transform: scale(1.1);
+}
 .badge-nota{
     position: absolute;
     top: 8%;
     left: 4%;
-    background: rgba(0,0,0,.6);
+    background-color: rgba(0,0,0,.6);
     padding: 2px 15px;
     border-radius: 10px;
     color: #fff;
@@ -659,8 +673,11 @@ color: #7c3aed;
 .card-ani{
     background: transparent;
     flex-wrap: wrap;
+    transition: 0.5s ease;
 }
-
+.card-ani:hover{
+    transform: scale(1.1);
+}
 
 .card-ani a img{
     width: 200px;
@@ -676,4 +693,304 @@ color: #7c3aed;
      color: #fff;
      text-transform: uppercase;
      flex-wrap: wrap;
+}
+
+/* Página top melhores Animes*/
+
+/* Menu dos melhores Animes*/
+
+.top-melhor{
+    margin-left: 310px;
+    margin-top: 140px;
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.menu-top{
+    margin-left: 310px;
+    margin-top: 30px;
+}
+.list-top-1 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    background-color: #7c3aed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.list-top-1 a:hover{
+    transform: scale(1.1);
+}
+
+.list-top-2 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    background-color: #7c3aed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-top-2 a:hover{
+    transform: scale(1.1);
+}
+
+.list-top-3 a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ccc;
+    background-color: #7c3aed;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.list-top-3 a:hover{
+    transform: scale(1.1);
+}
+.top-anime{
+    display: flex;
+    gap: 40px;
+    cursor: pointer;
+}
+.list-top a{
+    color: #ccc;
+    transition: 0.5s ease;
+    border-radius: 5px;
+}
+.list-top:hover{
+    transform: scale(1.1);
+}
+
+/* Cards dos melhores animes*/
+
+.top-ani{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.top-box{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin-left: 310px;
+    margin-top: 60px;
+    background-color: #333;
+    padding: 15px 15px;
+    max-width: 500px;
+    gap: 30px;
+    border-radius: 10px;
+}
+.posicao{
+    color: #ccc;
+}
+.top-nome{
+    flex-wrap: wrap;
+    max-width: 8px;
+    font-size: 0.9rem;
+}
+.image-top{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.conteudo-anim{
+    color: #ccc;
+}
+
+.avaliacao i{
+    color: #ffc300;
+}
+
+.ava{
+color: #ffc300;
+}
+
+/*Página do meus favoritos*/
+
+.favo-meus{
+    margin-left: 320px;
+    margin-top: 150px;
+    
+}
+
+.meus-favo{
+    color: #ccc;
+    text-transform: uppercase;
+}
+
+.menu-favo, .favo-list{
+    margin-top: 20px;
+    display: flex;
+    gap: 40px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.favo-text a{
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.5s ease;
+}
+
+.favo-text a:hover{
+     display: inline-block;
+    text-decoration: underline;
+    text-decoration-thickness:4px ;
+    text-decoration-color: #7c3aed;
+    transform: scale(1.1);
+}
+
+.favo-text1 a{
+    display: inline-block;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.5s ease; text-decoration: underline;
+    text-decoration-thickness:4px ;
+    text-decoration-color: #7c3aed;
+    
+}
+
+.favo-text1 a:hover{
+    transform: scale(1.1);
+}
+.card-favo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+}
+.favo-card{
+      position: relative;
+      cursor: pointer;
+}
+.favo-card img{
+    margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: 0.5s ease;
+}
+.favo-card:hover{
+    transform: scale(1.1);
+}
+.info-favo{
+    position: absolute;
+    top: 72%;
+    width: 200px;
+    color: #ccc;
+    background-color: rgba(14, 14, 14, 0.6);
+    padding: 5px 10px ;
+    border-radius: 10px;
+}
+
+/* Página de login*/
+main{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+}
+
+.btn-seta i{
+    color: #7c3aed;
+    background-color: #000;
+    height: 70px;
+    cursor: pointer;
+    font-size: 30px;
+    transform: scaleX(-1);
+}
+.container-boxx{
+ display: flex;
+ flex-direction: column;
+ gap: 10px;
+}
+.img-perfil img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+    display: block;
+}
+
+.text-entrar{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.text-bemvindo{
+    color: #fff;
+}
+
+.text-para{
+    color: #ccc;
+}
+
+.label-box{
+    color: #aaa;
+    font-size: 13px;
+}
+
+.input-box input{
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    padding: 8px 15px;
+    width: 100%;
+    background-color: #545454;
+}
+.input-box input::placeholder{
+    color: #ccc;
+}
+
+.esqueceu{
+    margin-top: 10px;
+    text-align: right;
+    color: #7c3aed;
+    cursor: pointer;
+}
+
+.button-btn button{
+    width: 100%;
+    background-color: #7c3aed;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px 0;
+    cursor: pointer;
+    margin-top: 10px;
+    color: #fff;
+    transition: 0.5s ease;
+}
+.button-btn button:hover{
+    transform: scale(1.1);
+}
+.continuar{
+    color: #6b6b6b;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.google-btn {
+    margin-top: 40px;
+    margin-left: 150px;
+    width: 25px;
+    background-color: #000;
+    cursor: pointer;
+}
+
+.cad-text{
+    color: #fff;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 15px;
+}
+.cad-text a{
+    cursor: pointer;
+}
+.cad-destaque{
+    color: #7c3aed;
 }
