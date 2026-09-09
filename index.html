@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./Frontend/Assets/IMG/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>ARK SYSTEM</title>
@@ -120,7 +120,7 @@
 
     <!-- CARROSSEL PRINCIPAL -->
     <section class="container-card">
-        <div class="card">
+        <div class="card" id="main-carousel">
             <section class="slide">
                 <figure>
                     <img src="./Frontend/Assets/IMG/SoloLeving.png" alt="anime">
@@ -229,144 +229,190 @@
         </div>
     </section>
 
-    <!-- CONTAINER DE CARDS COM ESTRUTURA UNIFICADA -->
-    <div class="animes-box">
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.8</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/onepiece.jpeg" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">1ª Temporada</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">One Piece</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+    <!-- SLIDER / CARROSSEL DE CARDS -->
+    <div class="cards-slider-wrapper">
+        <button class="slider-btn prev-btn" id="prevCardBtn" aria-label="Anterior">
+            <i class='bx bx-chevron-left'></i>
+        </button>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.9</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/A-Silent.jpg" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">Filme</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">Koe no Katachi: A Silent Voice</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+        <div class="animes-box" id="cardsContainer">
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.8</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/onepiece.jpeg" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">1ª Temporada</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">One Piece</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">5.0</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">3ª Temporada</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">Shingeki no Kyojin: Attack on Titan</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.9</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/A-Silent.jpg" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">Filme</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">Koe no Katachi: A Silent Voice</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.1</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/Black-Clover.jpg" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">1ª Temporada</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">Black Clover</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">5.0</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">3ª Temporada</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">Shingeki no Kyojin: Attack on Titan</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.3</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/Blue-locke.webp" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">1ª Temporada</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">Blue Lock</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.1</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/Black-Clover.jpg" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">1ª Temporada</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">Black Clover</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.6</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/Boku-no-hero.jpg" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div>
-                            <p class="temporada">1ª Temporada</p>
-                        </div>
-                        <div>
-                            <p class="nome-anime">Boku no Hero: My Hero Academia</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.6</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/Boku-no-hero.jpg" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">1ª Temporada</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">Boku no Hero: My Hero Academia</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
 
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">4.9</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/caisen.webp" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div class="temporada">
-                            <p>2ª Temporada</p>
-                        </div>
-                        <div class="nome-anime">
-                            <p>Jujutsu Kaisen</p>
-                        </div>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.9</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/caisen.webp" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div class="temporada">
+                                <p>2ª Temporada</p>
+                            </div>
+                            <div class="nome-anime">
+                                <p>Jujutsu Kaisen</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+
+            <section>
+                <div class="animes">
+                    <figure>
+                        <span class="badge-nota">4.3</span>
+                        <a href="#"><img src="./Frontend/Assets/IMG/Blue-locke.webp" alt="card-anime"></a>
+                        <figcaption class="legenda">
+                            <div>
+                                <p class="temporada">1ª Temporada</p>
+                            </div>
+                            <div>
+                                <p class="nome-anime">Blue Lock</p>
+                            </div>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </div>
+
+        <button class="slider-btn next-btn" id="nextCardBtn" aria-label="Próximo">
+            <i class='bx bx-chevron-right'></i>
+        </button>
     </div>
 
-    <!-- SCRIPT DO MENU LATERAL HABILITADO -->
     <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const btnHamburguer = document.getElementById("btn-hamburguer");
-            const sidebar = document.getElementById("sidebar");
+        document.addEventListener('DOMContentLoaded', () => {
+
+            // 1. Menu Hambúrguer (Mobile)
+            const btnHamburguer = document.getElementById('btn-hamburguer');
+            const sidebar = document.getElementById('sidebar');
 
             if (btnHamburguer && sidebar) {
-                btnHamburguer.addEventListener("click", () => {
-                    sidebar.classList.toggle("active");
+                btnHamburguer.addEventListener('click', () => {
+                    sidebar.classList.toggle('active');
+                });
+            }
+
+            // 2. Carrossel Principal (Passagem Automática de Slides)
+            const mainCarousel = document.getElementById('main-carousel');
+            const mainSlides = document.querySelectorAll('.container-card .slide');
+            let currentSlide = 0;
+
+            function nextSlide() {
+                if (!mainCarousel || mainSlides.length === 0) return;
+                currentSlide = (currentSlide + 1) % mainSlides.length;
+                mainCarousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            }
+
+            // Transição a cada 5 segundos
+            setInterval(nextSlide, 5000);
+
+            // 3. Slider de Cards Inferior (Botões Próximo / Anterior)
+            const cardsContainer = document.getElementById('cardsContainer');
+            const prevBtn = document.getElementById('prevCardBtn');
+            const nextBtn = document.getElementById('nextCardBtn');
+
+            if (cardsContainer && prevBtn && nextBtn) {
+                const scrollAmount = 240; // Distância de rolagem ao clicar nos botões
+
+                nextBtn.addEventListener('click', () => {
+                    cardsContainer.scrollBy({
+                        left: scrollAmount,
+                        behavior: 'smooth'
+                    });
+                });
+
+                prevBtn.addEventListener('click', () => {
+                    cardsContainer.scrollBy({
+                        left: -scrollAmount,
+                        behavior: 'smooth'
+                    });
                 });
             }
         });
     </script>
-
-    <!-- JS EXTERNO DO CARROSSEL (se houver) -->
-    <script src="./Frontend/JS/carrossel.js"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>

@@ -238,7 +238,7 @@ PREMIUM BOX
 }
 
 /*===========================
-Carrossel 
+Carrossel Principal
 ===========================*/
 
 .container-card {
@@ -262,6 +262,7 @@ Carrossel
 
 .slide figure {
     position: relative;
+    width: 100%;
 }
 
 .slide img {
@@ -272,7 +273,6 @@ Carrossel
 }
 
 /* Overlay escuro */
-
 .slide figure::before {
     content: "";
     position: absolute;
@@ -286,7 +286,6 @@ Carrossel
 }
 
 /* Texto */
-
 figcaption {
     position: absolute;
     top: 50%;
@@ -310,6 +309,7 @@ figcaption h1 {
     font-size: 4rem;
     margin-bottom: 10px;
 }
+
 .solo-p {
     color: #7c3aed;
     font-weight: 600;
@@ -323,7 +323,6 @@ figcaption h1 {
 }
 
 /* Botões */
-
 .buttons {
     display: flex;
     gap: 15px;
@@ -337,7 +336,7 @@ figcaption h1 {
     color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
 }
 
 .button-assistir i {
@@ -346,7 +345,7 @@ figcaption h1 {
 
 .button-assistir:hover {
     background: #9333ea;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .saiba {
@@ -354,41 +353,56 @@ figcaption h1 {
     color: #fff;
     padding: 12px 20px;
     border-radius: 8px;
-    transition: 0.7s ease;
+    transition: 0.3s ease;
 }
 
 .saiba:hover {
     background: #fff;
     color: #000;
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
-.animes-box {
+/*==================================
+SLIDER DE CARDS DE ANIMES (INFERIOR)
+==================================*/
+
+.cards-slider-wrapper {
     position: relative;
-    margin-top: 40px;
-    margin-left: 280px;
-    width: calc(100% - 280px);
+    margin-left: 270px;
+    width: calc(100% - 270px);
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.animes-box::-webkit-scrollbar {
+    display: none; /* Oculta scroll no Chrome/Safari */
+}
+
+/* Onde os cards ficam escondidos/rolando */
+.animes-box {
+    display: flex;
     gap: 20px;
-    padding-bottom: 40px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    width: 100%;
+    /* Esconde a barra de rolagem padrão */
+    scrollbar-width: none; /* Firefox */
 }
 
 .animes-box section {
-    width: fit-content;
+    flex: 0 0 auto;
 }
 
 .animes {
-    padding: 20px 15px;
+    padding: 20px 5px ;
     background: transparent;
-    transition: 0.5s ease;
-    flex-direction: column;
+    transition: 0.3s ease;
 }
 
 .animes figure {
     position: relative;
     width: 200px;
-    display: flex;
 }
 
 .animes a img {
@@ -401,7 +415,7 @@ figcaption h1 {
 }
 
 .animes:hover {
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .badge-nota {
@@ -417,17 +431,19 @@ figcaption h1 {
 
 .legenda {
     position: absolute;
-    top: 90%;
+    top: 87%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
-    width: 80%;
+    width: 90%;
+    display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .temporada {
     background: rgba(0,0,0,.8);
-    padding: 4px 0px;
+    padding: 4px 10px;
     border-radius: 10px;
     color: #fff;
     text-align: center;
@@ -435,14 +451,176 @@ figcaption h1 {
 }
 
 .nome-anime {
-    position: relative;
-    top: 0;
-    right: 10%;
     color: #fff;
     font-weight: 600;
-    padding: 10px 0 0;
+    
     width: 200px;
     text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Botões do Carrossel de Cards */
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(124, 58, 237, 0.8);
+    color: #fff;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 30;
+    transition: 0.5s ease;
+}
+
+.slider-btn:hover {
+    background: #9333ea;
+    transform: translateY(-50%) scale(1.1);
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+@media screen and (max-width: 768px) {
+    /* ... seus outros estilos mobile ... */
+
+    /* Garante que o wrapper ocupe a largura total sem estourar a tela */
+    .cards-slider-wrapper {
+        margin-left: 0;
+        width: 100%;
+        position: relative;
+    }
+
+    /* Exibe e ajusta os botões do slide para telas pequenas */
+    .slider-btn {
+        display: flex !important;
+        width: 35px;
+        height: 35px;
+        font-size: 20px;
+        z-index: 30;
+        background: rgba(124, 58, 237, 0.9);
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+}
+/*==================================================================
+REGRAS MEDIA QUERIES - RESPONSIVO PARA MÓVEIS
+==================================================================*/
+
+@media screen and (max-width: 768px) {
+    .btn-hamburguer {
+        display: flex;
+    }
+
+    .sidebar {
+        left: -100%;
+        width: 250px;
+        top: 100px;
+    }
+
+    .sidebar.active {
+        left: 0;
+    }
+
+    .container-card,
+    .cards-slider-wrapper {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    /* Carrossel Principal Redimensionado Proporcionalmente */
+    .slide img {
+        height: auto;
+        max-height: 250px;
+        object-fit: cover;
+    }
+
+    figcaption {
+        left: 15px;
+        max-width: 85%;
+        top: 55%;
+    }
+
+    .dest {
+        font-size: 0.65rem;
+        padding: 2px 6px;
+        margin-bottom: 6px;
+    }
+
+    figcaption h1 {
+        font-size: 1.3rem;
+        margin-bottom: 4px;
+    }
+
+    .solo-p {
+        font-size: 0.75rem;
+        margin-bottom: 4px;
+    }
+
+    .solo-p1 {
+        font-size: 0.7rem;
+        line-height: 1.2;
+        margin-bottom: 8px;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .buttons {
+        gap: 6px;
+    }
+
+    .button-assistir, .saiba {
+        padding: 5px 10px;
+        font-size: 0.7rem;
+        border-radius: 5px;
+    }
+
+    .button-assistir i {
+        font-size: 14px;
+    }
+
+    /* Esconder botões Laterais no Mobile para Scroll Touch */
+    .slider-btn {
+        display: none;
+    }
+
+    .animes-box {
+        gap: 12px;
+        padding: 10px;
+    }
+
+    .animes figure,
+    .animes a img,
+    .nome-anime {
+        width: 130px;
+    }
+
+    .animes a img {
+        height: 180px;
+    }
+
+    .nome-anime {
+        font-size: 0.75rem;
+    }
 }
 
 /*==================================
@@ -450,7 +628,7 @@ PÁGINA DO EXPLORAR DROPDOWN
 ==================================*/
 
 .nav-bir {
-    width: calc(100% - 280px);
+    width: calc(100% - 240px);
     max-width: 1700px;
     padding: 7rem 0 0;
     display: flex;
@@ -473,7 +651,7 @@ PÁGINA DO EXPLORAR DROPDOWN
 
 .navb a {
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     text-align: left;
     text-decoration: none;
     border: 2px solid #fff;
@@ -1150,5 +1328,13 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
 
     .img-perfil {
         display: none;
+    }
+    .nav-bir{
+        padding: 7rem 20px 0;
+        
+    }
+    .navb a{
+        font-size: 14px;
+        padding: 10px 20px;
     }
 }
