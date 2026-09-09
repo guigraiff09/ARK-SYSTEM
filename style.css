@@ -363,16 +363,17 @@ figcaption h1 {
 }
 
 /*==================================
-SLIDER DE CARDS DE ANIMES (INFERIOR)
+SLIDER DE CARDS DE ANIMES (INFERIOR/SEMELHANTES)
 ==================================*/
 
 .cards-slider-wrapper {
     position: relative;
-    margin-left: 270px;
-    width: calc(100% - 270px);
+    margin-left: 280px;
+    width: calc(100% - 280px);
     display: flex;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 15px;
+    padding: 0 10px;
 }
 
 .animes-box::-webkit-scrollbar {
@@ -386,7 +387,6 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
     overflow-x: auto;
     scroll-behavior: smooth;
     width: 100%;
-    /* Esconde a barra de rolagem padrão */
     scrollbar-width: none; /* Firefox */
 }
 
@@ -395,7 +395,7 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
 }
 
 .animes {
-    padding: 20px 5px ;
+    padding: 20px 5px;
     background: transparent;
     transition: 0.3s ease;
 }
@@ -431,7 +431,7 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
 
 .legenda {
     position: absolute;
-    top: 87%;
+    top: 89.8%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -453,12 +453,12 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
 .nome-anime {
     color: #fff;
     font-weight: 600;
-    
     width: 200px;
     text-align: center;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    margin-top: 8px;
 }
 
 /* Botões do Carrossel de Cards */
@@ -466,19 +466,19 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: rgba(124, 58, 237, 0.8);
+    background: rgba(124, 58, 237, 0.85);
     color: #fff;
     border: none;
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    font-size: 28px;
+    font-size: 22px;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 30;
-    transition: 0.5s ease;
+    transition: 0.3s ease;
 }
 
 .slider-btn:hover {
@@ -487,140 +487,11 @@ SLIDER DE CARDS DE ANIMES (INFERIOR)
 }
 
 .prev-btn {
-    left: 10px;
+    left: -5px;
 }
 
 .next-btn {
-    right: 10px;
-}
-@media screen and (max-width: 768px) {
-    /* ... seus outros estilos mobile ... */
-
-    /* Garante que o wrapper ocupe a largura total sem estourar a tela */
-    .cards-slider-wrapper {
-        margin-left: 0;
-        width: 100%;
-        position: relative;
-    }
-
-    /* Exibe e ajusta os botões do slide para telas pequenas */
-    .slider-btn {
-        display: flex !important;
-        width: 35px;
-        height: 35px;
-        font-size: 20px;
-        z-index: 30;
-        background: rgba(124, 58, 237, 0.9);
-    }
-
-    .prev-btn {
-        left: 5px;
-    }
-
-    .next-btn {
-        right: 5px;
-    }
-}
-/*==================================================================
-REGRAS MEDIA QUERIES - RESPONSIVO PARA MÓVEIS
-==================================================================*/
-
-@media screen and (max-width: 768px) {
-    .btn-hamburguer {
-        display: flex;
-    }
-
-    .sidebar {
-        left: -100%;
-        width: 250px;
-        top: 100px;
-    }
-
-    .sidebar.active {
-        left: 0;
-    }
-
-    .container-card,
-    .cards-slider-wrapper {
-        margin-left: 0;
-        width: 100%;
-    }
-
-    /* Carrossel Principal Redimensionado Proporcionalmente */
-    .slide img {
-        height: auto;
-        max-height: 250px;
-        object-fit: cover;
-    }
-
-    figcaption {
-        left: 15px;
-        max-width: 85%;
-        top: 55%;
-    }
-
-    .dest {
-        font-size: 0.65rem;
-        padding: 2px 6px;
-        margin-bottom: 6px;
-    }
-
-    figcaption h1 {
-        font-size: 1.3rem;
-        margin-bottom: 4px;
-    }
-
-    .solo-p {
-        font-size: 0.75rem;
-        margin-bottom: 4px;
-    }
-
-    .solo-p1 {
-        font-size: 0.7rem;
-        line-height: 1.2;
-        margin-bottom: 8px;
-        display: -webkit-box;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
-    }
-
-    .buttons {
-        gap: 6px;
-    }
-
-    .button-assistir, .saiba {
-        padding: 5px 10px;
-        font-size: 0.7rem;
-        border-radius: 5px;
-    }
-
-    .button-assistir i {
-        font-size: 14px;
-    }
-
-    /* Esconder botões Laterais no Mobile para Scroll Touch */
-    .slider-btn {
-        display: none;
-    }
-
-    .animes-box {
-        gap: 12px;
-        padding: 10px;
-    }
-
-    .animes figure,
-    .animes a img,
-    .nome-anime {
-        width: 130px;
-    }
-
-    .animes a img {
-        height: 180px;
-    }
-
-    .nome-anime {
-        font-size: 0.75rem;
-    }
+    right: 5px;
 }
 
 /*==================================
@@ -732,7 +603,7 @@ PÁGINA DE LANÇAMENTO
     display: flex;
     margin-left: 280px;
     margin-top: 130px;
-    gap: 40px;
+    gap: 30px;
     padding: 0 20px;
     width: calc(100% - 280px);
 }
@@ -754,8 +625,8 @@ PÁGINA DE LANÇAMENTO
 }
 
 .anime-novo h1 {
+    text-transform: uppercase;
     color: #fff;
-    text-transform: capitalize;
 }
 
 .anime-novo .titulo {
@@ -815,36 +686,6 @@ PÁGINA DE LANÇAMENTO
     transform: scale(1.1);
 }
 
-.conteudo-info {
-    margin-left: 280px;
-    margin-top: 50px;
-    background-color: #454545;
-    padding: 20px;
-    border-radius: 10px;
-    width: calc(100% - 320px);
-}
-
-.info {
-    color: #fff;
-    padding: 0 0 10px 0;
-}
-
-.info-anime {
-    display: inline-block;
-    vertical-align: top;
-    color: #fff;
-    max-width: 100%;
-    font-size: 1.1rem;
-    text-align: left;
-    padding: 0 10px;
-}
-
-.info-anime p {
-    display: block;
-    white-space: normal;
-    text-align: left;
-}
-
 .ani-Semelhante {
     color: #fff;
 }
@@ -861,41 +702,6 @@ PÁGINA DE LANÇAMENTO
     color: #fff;
     text-transform: uppercase;
     padding: 0 20px;
-}
-
-.ani-cards {
-    display: flex;
-    margin-left: 280px;
-    padding: 20px;
-    gap: 30px;
-    flex-wrap: wrap;
-    width: calc(100% - 280px);
-}
-
-.card-ani {
-    background: transparent;
-    transition: 0.5s ease;
-}
-
-.card-ani:hover {
-    transform: scale(1.1);
-}
-
-.card-ani a img {
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    display: block;
-    cursor: pointer;
-}
-
-.nome-ani {
-    margin-top: 5px;
-    text-align: center;
-    color: #fff;
-    text-transform: uppercase;
-    width: 200px;
 }
 
 /*==================================
@@ -1235,11 +1041,11 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
         display: none;
     }
 
-    /* Ocultar Sidebar por padrão (só abre ao clicar no hambúrguer) */
+    /* Ocultar Sidebar por padrão */
     .sidebar {
         left: -100%;
         width: 250px;
-        top: 100px;
+        top: 90px;
     }
 
     .sidebar.active {
@@ -1247,12 +1053,10 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
     }
 
     .container-card,
-    .animes-box,
     .nav-bir,
     .container-anime,
     .conteudo-info,
     .text-seme,
-    .ani-cards,
     .top-melhor,
     .menu-top,
     .top-ani,
@@ -1298,28 +1102,46 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
         font-size: 18px;
     }
 
-    /* Cards Redimensionados Mantendo a Proporção */
-    .animes-box {
-        justify-content: flex-start;
-        gap: 15px;
+    /* Ajustes da Slider Wrapper e Cards no Mobile */
+    .cards-slider-wrapper {
+        margin-left: 0;
+        width: 100%;
+        padding: 0 5px;
     }
 
-    .animes {
+    .slider-btn {
+        display: flex !important;
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+        background: rgba(124, 58, 237, 0.9);
+    }
+
+    .prev-btn {
+        left: 5px;
+    }
+
+    .next-btn {
+        right: 5px;
+    }
+
+    .animes-box {
+        gap: 12px;
         padding: 10px 5px;
     }
 
     .animes figure,
     .animes a img,
     .nome-anime {
-        width: 140px;
+        width: 130px;
     }
 
     .animes a img {
-        height: 200px;
+        height: 180px;
     }
 
     .nome-anime {
-        font-size: 0.85rem;
+        font-size: 0.75rem;
     }
 
     main {
@@ -1329,29 +1151,139 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
     .img-perfil {
         display: none;
     }
-    .nav-bir{
-        padding: 7rem 20px 0;
-        
+
+    .nav-bir {
+        padding: 5rem 20px 0;
     }
-    .navb a{
+
+    .navb a {
         font-size: 14px;
         padding: 10px 10px;
     }
 
     .dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #1a1a2e;
-    list-style: none;
-    min-width: 100px;
-    padding: 10px 0;
-    border-radius: 10px;
-    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
-    z-index: 999;
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(10px);
-}
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #1a1a2e;
+        list-style: none;
+        min-width: 100px;
+        padding: 10px 0;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
 
-}
+    /* Layout da página de lançamento no mobile */
+    .container-anime {
+        position: relative;
+        flex-direction: column;
+        margin-left: 0;
+        width: 100%;
+        margin-top: 80px;
+        padding: 0;
+    }
+
+    /* A imagem se ajusta proporcionalmente à tela */
+    .imagem img {
+        width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: cover;
+        border-radius: 0;
+        border: none;
+    }
+
+    /* Container de informações sobreposto à imagem */
+    .info-ani {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 100%;
+        padding: 10px;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.95) 40%, rgba(0, 0, 0, 0.6) 80%, transparent 100%);
+        z-index: 10;
+    }
+
+    .anime-novo h1 {
+        font-size: 1.4rem;
+    }
+
+    .resumo-anime p {
+        margin-top: 8px;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+
+    .Assistir {
+        margin-top: 15px;
+        gap: 15px;
+    }
+
+    .Assistir button {
+        padding: 8px 15px;
+    }
+
+    .assit a, .favoritos a {
+        font-size: 0.9rem;
+    }
+    /* Header ajustado para caber todos os itens */
+    .header-box {
+        padding: 10px 12px;
+    }
+
+    .menu {
+        gap: 8px;
+    }
+
+    /* Exibe o botão hamburguer */
+    .btn-hamburguer {
+        display: flex;
+        font-size: 26px;
+    }
+
+    /* Ajusta o tamanho da logo no mobile */
+    .logo-header {
+        width: 85px;
+        height: auto;
+    }
+
+    .nav-bar ul {
+        gap: 8px;
+    }
+
+    /* Oculta apenas Premium e Favoritos */
+    .mobile-hide {
+        display: none !important;
+    }
+
+    /* Ajusta o campo de busca para ocupar o espaço disponível */
+    .search-box input {
+        width: 100%;
+        max-width: 140px;
+        padding: 6px 30px 6px 10px;
+        font-size: 12px;
+    }
+
+    .lupa {
+        right: 8px;
+        width: 14px;
+    }
+
+    /* Ajuste dos ícones (Sino) e Foto de Perfil */
+    .item i {
+        font-size: 20px;
+    }
+
+    .img-perfil-header {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+}  

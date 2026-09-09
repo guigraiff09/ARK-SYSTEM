@@ -153,11 +153,10 @@
 
             <div class="info-ani">
                 <div class="anime-novo">
-                    <h1>O universo começa agora!</h1>
-                    <h1>Anime Verse está <span class="titulo">NO AR!</span></h1>
+                    <h1>The Tunnel Summer</h1>
                 </div>
                 <div class="resumo-anime">
-                    <p>A história acompanha dois jovens estudantes, Kaoru e Anzu, que descobrem o misterioso Túnel Urashima — um lugar capaz de realizar o maior desejo de quem entra nele. O problema é o preço: para cada segundo dentro do túnel, anos se passam no mundo real. Juntos, eles investigam o local para tentar recuperar o que perderam, enfrentando o dilema entre os seus desejos e o tempo de suas vidas.</p>
+                    <p>Dois estudantes descobrem o Túnel Urashima, capaz de realizar desejos ao custo de anos de suas vidas, e arriscam tudo para recuperar o que perderam.</p>
                 </div>
 
                 <div class="botao-assistir">
@@ -172,75 +171,64 @@
 
     <hr class="linha">
 
-    <section class="conteudo-info">
-        <div>
-            <div class="info">
-                <h2>Informações</h2>
-            </div>
-            <div class="info-anime">
-                <h4>Estúdio</h4>
-                <p>Pony Canyon / CLAP</p>
-            </div>
-            <div class="info-anime">
-                <h4>Diretor</h4>
-                <p>Tomahisa Taguchi</p>
-            </div>
-            <div class="info-anime">
-                <h4>Gênero</h4>
-                <p>Drama, Romance, Ficção cientifica, Sobrenatural.</p>
-            </div>
-            <div class="info-anime">
-                <h4>Status</h4>
-                <p>Finalizado</p>
-            </div>
-            <div class="info-anime">
-                <h4>Lançamento</h4>
-                <p>09/09/2022 (Japão)</p>
-            </div>
-        </div>
-    </section>
-
-    <hr class="linha">
-
     <div class="text-seme"><h2>Animes Semelhantes</h2></div>
 
-    <section>
-        <div class="ani-cards">
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/Tunnel.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">The Tunnel Summer</p>
-            </div>
+    <!-- CARROSSEL EM SLIDE PARA ANIMES SEMELHANTES -->
+    <section class="cards-slider-wrapper">
+        <button class="slider-btn prev-btn" id="slide-prev">&#10094;</button>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/your-name.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Kimi no Na wa</p>
-            </div>
+        <div class="animes-box" id="animes-box">
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/Tunnel.jpg" alt="Filme o Tunnel"></a>
+                </figure>
+                <p class="nome-anime">The Tunnel Summer</p>
+            </section>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/tenki-no-ko.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Tenki no Ko</p>
-            </div>
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/your-name.jpg" alt="Your Name"></a>
+                </figure>
+                <p class="nome-anime">Kimi no Na wa</p>
+            </section>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/suzume-Tojimari.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Suzume no Tojimari</p>
-            </div>
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/tenki-no-ko.jpg" alt="Tenki no Ko"></a>
+                </figure>
+                <p class="nome-anime">Tenki no Ko</p>
+            </section>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/Orange.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Toki wo Kakeru</p>
-            </div>
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/suzume-Tojimari.jpg" alt="Suzume"></a>
+                </figure>
+                <p class="nome-anime">Suzume no Tojimari</p>
+            </section>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG//her-blue-sky.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Her blue sky</p>
-            </div>
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/Orange.jpg" alt="Toki wo Kakeru"></a>
+                </figure>
+                <p class="nome-anime">Toki wo Kakeru</p>
+            </section>
 
-            <div class="card-ani">
-                <a href="#"><img src="/Frontend/Assets/IMG/koe-no-katachi.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Koe no katachi</p>
-            </div>
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/her-blue-sky.jpg" alt="Her blue sky"></a>
+                </figure>
+                <p class="nome-anime">Her blue sky</p>
+            </section>
+
+            <section class="animes">
+                <figure>
+                    <a href="#"><img src="/Frontend/Assets/IMG/koe-no-katachi.jpg" alt="Koe no katachi"></a>
+                </figure>
+                <p class="nome-anime">Koe no katachi</p>
+            </section>
         </div>
+
+        <button class="slider-btn next-btn" id="slide-next">&#10095;</button>
     </section>
 
     <!-- JAVASCRIPT EMBUTIDO -->
@@ -252,6 +240,21 @@
             if (btnHamburguer && sidebar) {
                 btnHamburguer.addEventListener("click", () => {
                     sidebar.classList.toggle("active");
+                });
+            }
+
+            // Lógica para deslizar o carrossel de Animes Semelhantes
+            const animesBox = document.getElementById("animes-box");
+            const prevBtn = document.getElementById("slide-prev");
+            const nextBtn = document.getElementById("slide-next");
+
+            if (animesBox && prevBtn && nextBtn) {
+                nextBtn.addEventListener("click", () => {
+                    animesBox.scrollBy({ left: 300, behavior: "smooth" });
+                });
+
+                prevBtn.addEventListener("click", () => {
+                    animesBox.scrollBy({ left: -300, behavior: "smooth" });
                 });
             }
         });
