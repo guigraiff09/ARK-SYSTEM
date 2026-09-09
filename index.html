@@ -16,8 +16,8 @@
     <header class="header-box">
         <div class="menu">
             
-            <!-- Botão Hambúrguer adicionado -->
-            <button class="btn-hamburguer" id="btn-hamburguer">
+            <!-- Botão Hambúrguer -->
+            <button class="btn-hamburguer" id="btn-hamburguer" aria-label="Abrir menu">
                 <i class='bx bx-menu'></i>
             </button>
 
@@ -58,7 +58,7 @@
         </div>
     </header>
 
-    <!-- MENU LATERAL -->
+    <!-- MENU LATERAL (SIDEBAR) -->
     <aside class="sidebar" id="sidebar">
         <div class="menu-lateral">
             <ul class="Principal">
@@ -118,6 +118,7 @@
         </div>
     </aside>
 
+    <!-- CARROSSEL PRINCIPAL -->
     <section class="container-card">
         <div class="card">
             <section class="slide">
@@ -243,7 +244,6 @@
                             <p class="nome-anime">One Piece</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -261,7 +261,6 @@
                             <p class="nome-anime">Koe no Katachi: A Silent Voice</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -276,10 +275,9 @@
                             <p class="temporada">3ª Temporada</p>
                         </div>
                         <div>
-                             <p class="nome-anime">Shingeki no Kyojin: Attack on Titan</p>
+                            <p class="nome-anime">Shingeki no Kyojin: Attack on Titan</p>
                         </div>
                     </figcaption>
-                   
                 </figure>
             </div>
         </section>
@@ -297,7 +295,6 @@
                             <p class="nome-anime">Black Clover</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -315,7 +312,6 @@
                             <p class="nome-anime">Blue Lock</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -333,7 +329,6 @@
                             <p class="nome-anime">Boku no Hero: My Hero Academia</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -345,38 +340,33 @@
                     <a href="#"><img src="./Frontend/Assets/IMG/caisen.webp" alt="card-anime"></a>
                     <figcaption class="legenda">
                         <div class="temporada">
-                            <p >2ª Temporada</p>
+                            <p>2ª Temporada</p>
                         </div>
                         <div class="nome-anime">
                             <p>Jujutsu Kaisen</p>
                         </div>
                     </figcaption>
-                    
-                </figure>
-            </div>
-        </section>
-
-        <section>
-            <div class="animes">
-                <figure>
-                    <span class="badge-nota">5.0</span>
-                    <a href="#"><img src="./Frontend/Assets/IMG/Dandan.jpg" alt="card-anime"></a>
-                    <figcaption class="legenda">
-                        <div class="temporada">
-                            <p>1ª Temporada</p>
-                        </div>
-                 <div class="nome-anime"> 
-                    <p>Dandadan</p>
-                </div>
-                    </figcaption>
-                    
                 </figure>
             </div>
         </section>
     </div>
 
+    <!-- SCRIPT DO MENU LATERAL HABILITADO -->
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnHamburguer = document.getElementById("btn-hamburguer");
+            const sidebar = document.getElementById("sidebar");
+
+            if (btnHamburguer && sidebar) {
+                btnHamburguer.addEventListener("click", () => {
+                    sidebar.classList.toggle("active");
+                });
+            }
+        });
+    </script>
+
+    <!-- JS EXTERNO DO CARROSSEL (se houver) -->
     <script src="./Frontend/JS/carrossel.js"></script>
-    <script src="./Frontend/JS/menu.js"></script>
 </body>
 
 </html>

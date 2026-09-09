@@ -40,6 +40,17 @@ HEADER
     justify-content: space-between;
 }
 
+/* Botão Hambúrguer (Escondido no Desktop) */
+.btn-hamburguer {
+    display: none;
+    background: transparent;
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
 .nav-bar {
     display: flex;
     align-items: center;
@@ -406,7 +417,7 @@ figcaption h1 {
 
 .legenda {
     position: absolute;
-   top: 90%;
+    top: 90%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 10;
@@ -451,14 +462,13 @@ PÁGINA DO EXPLORAR DROPDOWN
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 10px;
 }
 
 .navb li {
     list-style: none;
     display: inline-block;
-    padding: 0 0.5rem;
+    padding: 0 0.2rem;
 }
 
 .navb a {
@@ -720,7 +730,6 @@ PÁGINA TOP MELHORES ANIMES
     color: #ccc;
     text-transform: uppercase;
     padding: 0 20px;
-    
 }
 
 .menu-top {
@@ -1038,9 +1047,25 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
 }
 
 @media screen and (max-width: 768px) {
-    /* Ajustes Gerais para Sidebar e Conteúdo */
+    /* Exibir botão Hambúrguer */
+    .btn-hamburguer {
+        display: flex;
+    }
+
+    /* Ocultar itens específicos no mobile mantendo Perfil e Busca */
+    .nav-bar .item:not(:last-child) {
+        display: none;
+    }
+
+    /* Ocultar Sidebar por padrão (só abre ao clicar no hambúrguer) */
     .sidebar {
-        display: none; /* Oculta a sidebar no mobile mantendo o espaço livre */
+        left: -100%;
+        width: 250px;
+        top: 100px;
+    }
+
+    .sidebar.active {
+        left: 0;
     }
 
     .container-card,

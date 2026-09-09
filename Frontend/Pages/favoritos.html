@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Explorar</title>
+    <title>Favoritos</title>
 </head>
 
 <body>
@@ -20,11 +20,11 @@
         <div class="menu">
 
             <!-- Botão Hambúrguer -->
-            <div class="menu-toggle" id="menu-toggle">
+            <button class="btn-hamburguer" id="menu-toggle" aria-label="Abrir Menu">
                 <i class='bx bx-menu'></i>
-            </div>
+            </button>
 
-            <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
+            <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130">
 
             <nav class="nav-bar">
 
@@ -55,7 +55,7 @@
 
                     <li class="item">
                         <a href="#">
-                            <img src="/Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="50px">
+                            <img src="/Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="50">
                         </a>
                     </li>
 
@@ -123,30 +123,31 @@
                     </a>
                 </li>
 
-                <!-- PREMIUM -->
-                <div class="premium-box">
-
-                    <h2>
-                        <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
-                        Seja Premium
-                    </h2>
-
-                    <p>
-                        Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                    </p>
-
-                    <button>Assine agora</button>
-
-                </div>
-
             </ul>
+
+            <!-- PREMIUM -->
+            <div class="premium-box">
+
+                <h2>
+                    <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
+                    Seja Premium
+                </h2>
+
+                <p>
+                    Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
+                </p>
+
+                <button type="button">Assine agora</button>
+
+            </div>
 
         </div>
 
     </aside>
 
-    <section>
-        <div class="favo-meus">
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+        <section class="favo-meus">
 
             <div class="meus-favo">
                 <h2>Meus Favoritos</h2>
@@ -162,15 +163,15 @@
             <div class="card-favo">
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/SoloLeving.png" alt="SoloLeving"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/SoloLeving.png" alt="Solo Leveling"></a>
                     <div class="info-favo">
-                        <h3>Solo Leving</h3>
+                        <h3>Solo Leveling</h3>
                         <h4>25 Episódios</h4>
                     </div>
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/bleach.jpg" alt="bleach"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/bleach.jpg" alt="Bleach"></a>
                     <div class="info-favo">
                         <h3>Bleach</h3>
                         <h4>366 Episódios</h4>
@@ -178,7 +179,7 @@
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="demon-slayer"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="Demon Slayer"></a>
                     <div class="info-favo">
                         <h3>Demon Slayer</h3>
                         <h4>63 Episódios</h4>
@@ -186,15 +187,15 @@
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="ataque-dos-titãs"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="Attack on Titan"></a>
                     <div class="info-favo">
-                        <h3>Attaque on Titan</h3>
+                        <h3>Attack on Titan</h3>
                         <h4>87 Episódios</h4>
                     </div>
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/Dandan.jpg" alt="Dandan"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/Dandan.jpg" alt="Dandadan"></a>
                     <div class="info-favo">
                         <h3>Dandadan</h3>
                         <h4>24 Episódios</h4>
@@ -202,7 +203,7 @@
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/Black-Clover.jpg" alt="Black-Clover"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/Black-Clover.jpg" alt="Black Clover"></a>
                     <div class="info-favo">
                         <h3>Black Clover</h3>
                         <h4>170 Episódios</h4>
@@ -210,7 +211,7 @@
                 </div>
 
                 <div class="favo-card">
-                    <a href="#"><img src="/Frontend/Assets/IMG/Necromance.jpg" alt="Necromance"></a>
+                    <a href="#"><img src="/Frontend/Assets/IMG/Necromance.jpg" alt="Dead Mount Death Play"></a>
                     <div class="info-favo">
                         <h3>Dead Mount Death</h3>
                         <h4>25 Episódios</h4>
@@ -219,17 +220,15 @@
 
             </div>
 
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- JAVASCRIPT EMBUTIDO -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             const menuToggle = document.getElementById('menu-toggle');
             const sidebar = document.getElementById('sidebar');
             const overlay = document.getElementById('menu-overlay');
 
-            // Abre/fecha o menu ao clicar no botão hambúrguer
             if (menuToggle) {
                 menuToggle.addEventListener('click', () => {
                     sidebar.classList.toggle('active');
@@ -237,7 +236,6 @@
                 });
             }
 
-            // Fecha o menu ao clicar fora dele (no overlay)
             if (overlay) {
                 overlay.addEventListener('click', () => {
                     sidebar.classList.remove('active');

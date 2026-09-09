@@ -6,157 +6,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Explorar</title>
+    <title>Explorar - ARK SYSTEM</title>
 </head>
 
 <body>
 
-    <!-- Overlay escuro ao abrir menu mobile -->
-    <div class="menu-overlay" id="menu-overlay"></div>
-
     <!-- HEADER -->
     <header class="header-box">
-
         <div class="menu">
-
-            <!-- Botão Hambúrguer -->
-            <div class="menu-toggle" id="menu-toggle">
+            
+            <!-- Botão Hambúrguer (Visível apenas em dispositivos móveis/tablets) -->
+            <button class="btn-hamburguer" id="btn-hamburguer" aria-label="Abrir menu">
                 <i class='bx bx-menu'></i>
-            </div>
+            </button>
 
             <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
 
             <nav class="nav-bar">
-
                 <ul>
-
+                    <!-- Input de busca (Sempre visível) -->
                     <li class="search-box">
                         <input type="text" placeholder="Buscar animes">
                         <img src="https://img.icons8.com/ios/50/ffffff/search--v1.png" alt="lupa" class="lupa">
                     </li>
 
+                    <!-- Premium (Oculto no celular) -->
                     <li class="item">
                         <a href="#">
                             <i class='bx bxs-crown'><span class="destaque">Premium</span></i>
                         </a>
                     </li>
 
+                    <!-- Favoritos (Oculto no celular) -->
                     <li class="item">
                         <a href="/Frontend/Pages/favoritos.html">
                             <i class='bx bx-heart'></i>
                         </a>
                     </li>
 
+                    <!-- Notificação (Oculto no celular) -->
                     <li class="item">
                         <a href="#">
                             <i class='bx bx-bell'></i>
                         </a>
                     </li>
 
+                    <!-- Perfil (Sempre visível) -->
                     <li class="item">
                         <a href="#">
-                            <img src="/Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="50px">
+                            <img src="/Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="40px">
                         </a>
                     </li>
-
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
 
-    <!-- MENU LATERAL -->
+    <!-- MENU LATERAL (SIDEBAR) -->
     <aside class="sidebar" id="sidebar">
-
         <div class="menu-lateral">
-
             <ul class="Principal">
-
                 <li class="menu-list">
                     <a href="/index.html">
                         <img src="https://img.icons8.com/material-outlined/20/ffffff/home--v2.png" alt="inicio">
                         Início
                     </a>
                 </li>
-
-                <li class="menu-list2">
+                <li class="menu-list1">
                     <a href="/Frontend/Pages/Explorar.html">
                         <img src="https://img.icons8.com/forma-light/20/ffffff/search.png" alt="explorar">
                         Explorar
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/lançamento.html">
                         <img src="https://img.icons8.com/material-outlined/20/ffffff/rocket.png" alt="Lançamento">
                         Lançamento
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/top-anime.html">
                         <img src="https://img.icons8.com/ios/20/ffffff/star--v1.png" alt="Estrela">
                         Top Animes
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/favoritos.html">
                         <img src="https://img.icons8.com/ios-glyphs/20/ffffff/hearts.png" alt="favoritos">
                         Favoritos
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="#">
                         <img src="https://img.icons8.com/puffy-filled/20/ffffff/time-machine.png" alt="Histórico">
                         Histórico
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/login.html">
                         <img src="https://img.icons8.com/ios/20/ffffff/import.png" alt="login">
                         Login
                     </a>
                 </li>
-
-                <!-- PREMIUM -->
-                <div class="premium-box">
-
-                    <h2>
-                        <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
-                        Seja Premium
-                    </h2>
-
-                    <p>
-                        Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                    </p>
-
-                    <button>Assine agora</button>
-
-                </div>
             </ul>
+
+            <!-- PREMIUM -->
+            <div class="premium-box">
+                <h2>
+                    <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
+                    Seja Premium
+                </h2>
+                <p>Tenha acesso exclusivo, sem anúncios e com qualidade máxima!</p>
+                <button>Assine agora</button>
+            </div>
         </div>
     </aside>
 
     <div class="linha"></div>
 
+    <!-- MENU DE FILTROS -->
     <header class="menu">
-
         <div class="nav-bir">
-
             <nav class="navb">
-
                 <ul>
-
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle">
                             Gênero <i class='bx bx-chevron-down'></i>
                         </a>
-
                         <ul class="dropdown-menu">
                             <li><a href="#">Aventura</a></li>
                             <li><a href="#">Romance</a></li>
@@ -168,7 +144,6 @@
                         <a href="#" class="dropdown-toggle">
                             Status <i class='bx bx-chevron-down'></i>
                         </a>
-
                         <ul class="dropdown-menu">
                             <li><a href="#">Em andamento</a></li>
                             <li><a href="#">Finalizado</a></li>
@@ -179,7 +154,6 @@
                         <a href="#" class="dropdown-toggle">
                             Ordenar por <i class='bx bx-chevron-down'></i>
                         </a>
-
                         <ul class="dropdown-menu">
                             <li><a href="#">Mais recente</a></li>
                             <li><a href="#">Mais popular</a></li>
@@ -191,13 +165,13 @@
         </div>
     </header>
 
+    <!-- CONTAINER DE ANIMES -->
     <div class="animes-box">
-
         <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
-                    <a href="#"> <img src="../Assets/IMG/DragonBall- Z.jpg" alt="DragonBall"></a>
+                    <a href="#"><img src="../Assets/IMG/DragonBall- Z.jpg" alt="DragonBall"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -206,7 +180,6 @@
                             <p class="nome-anime">DragonBall Z</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -215,7 +188,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
-                    <a href="#"> <img src="../Assets/IMG/flower.jpg" alt="flower"></a>
+                    <a href="#"><img src="../Assets/IMG/flower.jpg" alt="flower"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -224,7 +197,6 @@
                             <p class="nome-anime">Kaoru Hana</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -233,7 +205,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.9</span>
-                    <a href="#"> <img src="../Assets/IMG/Mushoku-Tensei.jpg" alt="Mushoku-Tensei"></a>
+                    <a href="#"><img src="../Assets/IMG/Mushoku-Tensei.jpg" alt="Mushoku-Tensei"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -242,7 +214,6 @@
                             <p class="nome-anime">Mushoku-Tensei</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -251,7 +222,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.3</span>
-                    <a href="#"> <img src="../Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man"></a>
+                    <a href="#"><img src="../Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -259,9 +230,7 @@
                         <div>
                             <p class="nome-anime">ChainSaw-Man</p>
                         </div>
-
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -270,14 +239,15 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.6</span>
-                    <a href="#"> <img src="../Assets/IMG/meninas.jpg" alt="Kanojo, Okarishimasu"></a>
+                    <a href="#"><img src="../Assets/IMG/meninas.jpg" alt="Kanojo, Okarishimasu"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
                         </div>
-                        <div><p class="nome-anime">Kanojo, Okarishimasu</p></div>
+                        <div>
+                            <p class="nome-anime">Kanojo, Okarishimasu</p>
+                        </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -286,7 +256,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">5.0</span>
-                    <a href="#"> <img src="../Assets/IMG/DragonBall-Super.jpg" alt="DragonBall-Super"></a>
+                    <a href="#"><img src="../Assets/IMG/DragonBall-Super.jpg" alt="DragonBall-Super"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -295,7 +265,6 @@
                             <p class="nome-anime">DragonBall Super</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -304,7 +273,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">5.0</span>
-                    <a href="#"> <img src="../Assets/IMG/sword-art-online.jpg" alt="sword-art-online"></a>
+                    <a href="#"><img src="../Assets/IMG/sword-art-online.jpg" alt="sword-art-online"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -313,7 +282,6 @@
                             <p class="nome-anime">Sword art Online</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -322,14 +290,15 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
-                    <a href="#"> <img src="../Assets/IMG/wind-breaker.jpg" alt="wind-breaker"></a>
+                    <a href="#"><img src="../Assets/IMG/wind-breaker.jpg" alt="wind-breaker"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
                         <div>
-                        <p class="nome-anime">Wind Breaker</p>
-                    </div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Wind Breaker</p>
+                        </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -338,7 +307,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
-                    <a href="#"> <img src="../Assets/IMG/medalist.jpg" alt="medalist"></a>
+                    <a href="#"><img src="../Assets/IMG/medalist.jpg" alt="medalist"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -347,7 +316,6 @@
                             <p class="nome-anime">Medalist</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -356,7 +324,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.9</span>
-                    <a href="#"> <img src="../Assets/IMG/koe-no-katachi.jpg" alt="koe-no-katachi"></a>
+                    <a href="#"><img src="../Assets/IMG/koe-no-katachi.jpg" alt="koe-no-katachi"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">Filme</p>
@@ -365,7 +333,6 @@
                             <p class="nome-anime">Koe no katachi</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
@@ -374,7 +341,7 @@
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.9</span>
-                    <a href="#"> <img src="../Assets/IMG/enen-no-shouboutai.jpg" alt="enen-no-shouboutai"></a>
+                    <a href="#"><img src="../Assets/IMG/enen-no-shouboutai.jpg" alt="enen-no-shouboutai"></a>
                     <figcaption class="legenda">
                         <div>
                             <p class="temporada">1ª Temporada</p>
@@ -383,32 +350,23 @@
                             <p class="nome-anime">Enem no Shouboutai</p>
                         </div>
                     </figcaption>
-                    
                 </figure>
             </div>
         </section>
-
     </div>
 
-    <!-- SCRIPT DE NAVEGAÇÃO -->
+    <!-- SCRIPT DE ABERTURA/FECHAMENTO DO MENU -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menu-toggle');
-    const sidebar = document.getElementById('sidebar');
-    const overlay = document.getElementById('menu-overlay');
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnHamburguer = document.getElementById("btn-hamburguer");
+            const sidebar = document.getElementById("sidebar");
 
-    // Executa apenas ao clicar explicitamente no botão hambúrguer
-    menuToggle.addEventListener('click', () => {
-        sidebar.classList.toggle('active');
-        overlay.classList.toggle('active');
-    });
-
-    // Fecha o menu se o usuário clicar no overlay (fora do menu)
-    overlay.addEventListener('click', () => {
-        sidebar.classList.remove('active');
-        overlay.classList.remove('active');
-    });
-});
+            if (btnHamburguer && sidebar) {
+                btnHamburguer.addEventListener("click", () => {
+                    sidebar.classList.toggle("active");
+                });
+            }
+        });
     </script>
 </body>
 

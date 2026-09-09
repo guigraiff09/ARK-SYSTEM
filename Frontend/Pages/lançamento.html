@@ -21,9 +21,9 @@
         <div class="menu">
 
             <!-- Botão Hambúrguer -->
-            <div class="menu-toggle" id="menu-toggle">
+            <button class="btn-hamburguer" id="btn-hamburguer" aria-label="Abrir menu">
                 <i class='bx bx-menu'></i>
-            </div>
+            </button>
 
             <img src="../Assets/IMG/logo.png" alt="logo" width="130px">
 
@@ -245,24 +245,13 @@
 
     <!-- JAVASCRIPT EMBUTIDO -->
     <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const menuToggle = document.getElementById('menu-toggle');
-            const sidebar = document.getElementById('sidebar');
-            const overlay = document.getElementById('menu-overlay');
+        document.addEventListener("DOMContentLoaded", () => {
+            const btnHamburguer = document.getElementById("btn-hamburguer");
+            const sidebar = document.getElementById("sidebar");
 
-            // Só dispara a função quando o usuário clica no botão hambúrguer
-            if (menuToggle) {
-                menuToggle.addEventListener('click', () => {
-                    sidebar.classList.toggle('active');
-                    overlay.classList.toggle('active');
-                });
-            }
-
-            // Fecha o menu se o usuário clicar no fundo/overlay
-            if (overlay) {
-                overlay.addEventListener('click', () => {
-                    sidebar.classList.remove('active');
-                    overlay.classList.remove('active');
+            if (btnHamburguer && sidebar) {
+                btnHamburguer.addEventListener("click", () => {
+                    sidebar.classList.toggle("active");
                 });
             }
         });
