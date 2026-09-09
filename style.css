@@ -687,7 +687,7 @@ PÁGINA DO EXPLORAR DROPDOWN
     left: 0;
     background: #1a1a2e;
     list-style: none;
-    min-width: 160px;
+    min-width: 130px;
     padding: 10px 0;
     border-radius: 10px;
     box-shadow: 0 8px 16px rgba(0,0,0,0.5);
@@ -1300,7 +1300,7 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
 
     /* Cards Redimensionados Mantendo a Proporção */
     .animes-box {
-        justify-content: center;
+        justify-content: flex-start;
         gap: 15px;
     }
 
@@ -1337,5 +1337,21 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
         font-size: 14px;
         padding: 10px 10px;
     }
+
+    .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #1a1a2e;
+    list-style: none;
+    min-width: 100px;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.5);
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+}
 
 }
