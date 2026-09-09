@@ -14,15 +14,17 @@
 
     <!-- HEADER -->
     <header class="header-box">
-
         <div class="menu">
+            
+            <!-- Botão Hambúrguer adicionado -->
+            <button class="btn-hamburguer" id="btn-hamburguer">
+                <i class='bx bx-menu'></i>
+            </button>
 
             <img src="./Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
 
             <nav class="nav-bar">
-
                 <ul>
-
                     <li class="search-box">
                         <input type="text" placeholder="Buscar animes">
                         <img src="https://img.icons8.com/ios/50/ffffff/search--v1.png" alt="lupa" class="lupa">
@@ -31,7 +33,6 @@
                     <li class="item">
                         <a href="#">
                             <i class='bx bxs-crown'><span class="destaque">Premium</span></i>
-
                         </a>
                     </li>
 
@@ -52,158 +53,111 @@
                             <img src="./Frontend/Assets/IMG/perfil.png" alt="foto de perfil" width="50px">
                         </a>
                     </li>
-
                 </ul>
-
             </nav>
-
         </div>
-
     </header>
 
     <!-- MENU LATERAL -->
-    <aside class="sidebar">
-
+    <aside class="sidebar" id="sidebar">
         <div class="menu-lateral">
-
             <ul class="Principal">
-
                 <li class="menu-list1">
                     <a href="./index.html">
                         <img src="https://img.icons8.com/material-outlined/20/ffffff/home--v2.png" alt="inicio">
                         Início
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="./Frontend/Pages/Explorar.html">
                         <img src="https://img.icons8.com/forma-light/20/ffffff/search.png" alt="explorar">
                         Explorar
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="./Frontend/Pages/lançamento.html">
                         <img src="https://img.icons8.com/material-outlined/20/ffffff/rocket.png" alt="Lançamento">
                         Lançamentos
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/top-anime.html">
                         <img src="https://img.icons8.com/ios/20/ffffff/star--v1.png" alt="Estrela">
                         Top Animes
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/favoritos.html">
                         <img src="https://img.icons8.com/ios-glyphs/20/ffffff/hearts.png" alt="favoritos">
                         Favoritos
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="#">
                         <img src="https://img.icons8.com/puffy-filled/20/ffffff/time-machine.png" alt="Histórico">
                         Histórico
                     </a>
                 </li>
-
                 <li class="menu-list">
                     <a href="/Frontend/Pages/login.html">
                         <img src="https://img.icons8.com/ios/20/ffffff/import.png" alt="login">
                         Login
                     </a>
                 </li>
-
-
-
             </ul>
 
             <!-- PREMIUM -->
             <div class="premium-box">
-
                 <h2>
                     <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
                     Seja Premium
                 </h2>
-
-                <p>
-                    Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                </p>
-
+                <p>Tenha acesso exclusivo, sem anúncios e com qualidade máxima!</p>
                 <button>Assine agora</button>
-
             </div>
         </div>
     </aside>
 
     <section class="container-card">
-
         <div class="card">
-
             <section class="slide">
                 <figure>
                     <img src="./Frontend/Assets/IMG/SoloLeving.png" alt="anime">
-
                     <figcaption>
                         <span class="dest">EM ALTA</span>
-
                         <h1>Solo Leveling</h1>
-
-                        <p class="solo-p">
-                            O CAÇADOR MAIS FORTE DESPERTA.
-                        </p>
-
+                        <p class="solo-p">O CAÇADOR MAIS FORTE DESPERTA.</p>
                         <p class="solo-p1">
                             Eles dizem que o que não te mata te deixa mais forte,
                             mas esse não é o caso do caçador mais fraco de todos.
                         </p>
-
                         <div class="buttons">
                             <a href="#" class="button-assistir">
                                 <i class='bx bx-play'></i>
                                 Assistir Agora
                             </a>
-
-                            <a href="#" class="saiba">
-                                Mais Informações
-                            </a>
+                            <a href="#" class="saiba">Mais Informações</a>
                         </div>
-
                     </figcaption>
-
                 </figure>
             </section>
 
             <section class="slide">
                 <figure>
                     <img src="./Frontend/Assets/IMG/jujutsu.jpg" alt="anime">
-
                     <figcaption>
                         <span class="dest">EM ALTA</span>
                         <h1>Jujutsu Kaisen</h1>
-
-                        <p class="solo-p">
-                            O MUNDO DAS MALDIÇÕES.
-                        </p>
-
+                        <p class="solo-p">O MUNDO DAS MALDIÇÕES.</p>
                         <p class="solo-p1">
-                            Yuji Itadori entra em um universo onde energia amaldiçoada e exorcistas definem a
-                            sobrevivência.
-                            Uma batalha intensa entre humanos e criaturas sobrenaturais.
+                            Yuji Itadori entra em um universo onde energia amaldiçoada e exorcistas definem a sobrevivência.
                         </p>
-
                         <div class="buttons">
                             <a href="#" class="button-assistir">
                                 <i class='bx bx-play'></i>
                                 Assistir Agora
                             </a>
-
-                            <a href="#" class="saiba">
-                                Mais Informações
-                            </a>
+                            <a href="#" class="saiba">Mais Informações</a>
                         </div>
                     </figcaption>
                 </figure>
@@ -211,31 +165,20 @@
 
             <section class="slide">
                 <figure>
-                    <img src="./Frontend/Assets/IMG//Re-zero.jpg" alt="anime">
-
+                    <img src="./Frontend/Assets/IMG/Re-zero.jpg" alt="anime">
                     <figcaption>
                         <span class="dest">EM ALTA</span>
                         <h1>RE Zero</h1>
-
-                        <p class="solo-p">
-                            RECOMEÇAR DÓI.
-                        </p>
-
+                        <p class="solo-p">RECOMEÇAR DÓI.</p>
                         <p class="solo-p1">
-                            Subaru descobre que pode voltar no tempo após morrer, mas cada escolha traz dor e
-                            consequências.
-                            Um ciclo cruel de sofrimento e sobrevivência.
+                            Subaru descobre que pode voltar no tempo após morrer, mas cada escolha traz dor e consequências.
                         </p>
-
                         <div class="buttons">
                             <a href="#" class="button-assistir">
                                 <i class='bx bx-play'></i>
                                 Assistir Agora
                             </a>
-
-                            <a href="#" class="saiba">
-                                Mais Informações
-                            </a>
+                            <a href="#" class="saiba">Mais Informações</a>
                         </div>
                     </figcaption>
                 </figure>
@@ -244,30 +187,19 @@
             <section class="slide">
                 <figure>
                     <img src="./Frontend/Assets/IMG/Naruto.jpg" alt="anime">
-
                     <figcaption>
                         <span class="dest">EM ALTA</span>
-                        <h1>Naruto </h1>
-
-                        <p class="solo-p">
-                            O SONHO DE UM NINJA.
-                        </p>
-
+                        <h1>Naruto</h1>
+                        <p class="solo-p">O SONHO DE UM NINJA.</p>
                         <p class="solo-p1">
-                            Naruto Uzumaki luta para ser reconhecido enquanto enfrenta desafios, inimigos e seu próprio
-                            destino.
-                            Uma jornada de superação e amizade.
+                            Naruto Uzumaki luta para ser reconhecido enquanto enfrenta desafios, inimigos e seu próprio destino.
                         </p>
-
                         <div class="buttons">
                             <a href="#" class="button-assistir">
                                 <i class='bx bx-play'></i>
                                 Assistir Agora
                             </a>
-
-                            <a href="#" class="saiba">
-                                Mais Informações
-                            </a>
+                            <a href="#" class="saiba">Mais Informações</a>
                         </div>
                     </figcaption>
                 </figure>
@@ -276,47 +208,42 @@
             <section class="slide">
                 <figure>
                     <img src="./Frontend/Assets/IMG/demon-slayer.jpg" alt="anime">
-
                     <figcaption>
                         <span class="dest">EM ALTA</span>
                         <h1>Demon Slayer</h1>
-
-                        <p class="solo-p">
-                            CAÇADOR DE DEMÔNIOS.
-                        </p>
-
+                        <p class="solo-p">CAÇADOR DE DEMÔNIOS.</p>
                         <p class="solo-p1">
                             Tanjiro Kamado busca salvar sua irmã e derrotar demônios em um mundo sombrio e perigoso.
-                            Uma história de dor, coragem e vingança.
                         </p>
-
                         <div class="buttons">
                             <a href="#" class="button-assistir">
                                 <i class='bx bx-play'></i>
                                 Assistir Agora
                             </a>
-
-                            <a href="#" class="saiba">
-                                Mais Informações
-                            </a>
+                            <a href="#" class="saiba">Mais Informações</a>
                         </div>
                     </figcaption>
                 </figure>
             </section>
-
         </div>
     </section>
 
+    <!-- CONTAINER DE CARDS COM ESTRUTURA UNIFICADA -->
     <div class="animes-box">
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.8</span>
+                    <span class="badge-nota">4.8</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/onepiece.jpeg" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">One Piece</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">One Piece</span>
+                    
                 </figure>
             </div>
         </section>
@@ -324,12 +251,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.9</span>
+                    <span class="badge-nota">4.9</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/A-Silent.jpg" alt="card-anime"></a>
                     <figcaption class="legenda">
-
+                        <div>
+                            <p class="temporada">Filme</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Koe no Katachi: A Silent Voice</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Koe no Katachi: A Silent Voice</span>
+                    
                 </figure>
             </div>
         </section>
@@ -337,12 +269,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 5.0</span>
+                    <span class="badge-nota">5.0</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">3ª Temporada</p>
+                        <div>
+                            <p class="temporada">3ª Temporada</p>
+                        </div>
+                        <div>
+                             <p class="nome-anime">Shingeki no Kyojin: Attack on Titan</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Shingeki no Kyojin: Attack on Titan</span>
+                   
                 </figure>
             </div>
         </section>
@@ -350,12 +287,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.1</span>
+                    <span class="badge-nota">4.1</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/Black-Clover.jpg" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Black Clover</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Black Clover</span>
+                    
                 </figure>
             </div>
         </section>
@@ -363,12 +305,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.3</span>
+                    <span class="badge-nota">4.3</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/Blue-locke.webp" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Blue Lock</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Blue Lock</span>
+                    
                 </figure>
             </div>
         </section>
@@ -376,12 +323,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.6</span>
+                    <span class="badge-nota">4.6</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/Boku-no-hero.jpg" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Boku no Hero: My Hero Academia</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Boku no Hero: My Hero Academia</span>
+                    
                 </figure>
             </div>
         </section>
@@ -389,11 +341,17 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 4.9</span>
+                    <span class="badge-nota">4.9</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/caisen.webp" alt="card-anime"></a>
                     <figcaption class="legenda">
+                        <div class="temporada">
+                            <p >2ª Temporada</p>
+                        </div>
+                        <div class="nome-anime">
+                            <p>Jujutsu Kaisen</p>
+                        </div>
                     </figcaption>
-                    <span class="nome-anime">Jujutsu Caisen</span>
+                    
                 </figure>
             </div>
         </section>
@@ -401,20 +359,24 @@
         <section>
             <div class="animes">
                 <figure>
-                    <span class="badge-nota"> 5.0</span>
+                    <span class="badge-nota">5.0</span>
                     <a href="#"><img src="./Frontend/Assets/IMG/Dandan.jpg" alt="card-anime"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div class="temporada">
+                            <p>1ª Temporada</p>
+                        </div>
+                 <div class="nome-anime"> 
+                    <p>Dandadan</p>
+                </div>
                     </figcaption>
-                    <span class="nome-anime">Dandadan</span>
+                    
                 </figure>
             </div>
         </section>
-
     </div>
 
     <script src="./Frontend/JS/carrossel.js"></script>
-
+    <script src="./Frontend/JS/menu.js"></script>
 </body>
 
 </html>

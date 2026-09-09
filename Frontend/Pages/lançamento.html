@@ -7,15 +7,23 @@
     <link rel="stylesheet" href="/style.css">
     <link rel="shortcut icon" href="./Frontend/Assets/IMG/favicon.ico" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>ARK SYSTEM</title>
+    <title>Lançamento</title>
 </head>
 
 <body>
+
+    <!-- Overlay escuro ao abrir menu mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
 
     <!-- HEADER -->
     <header class="header-box">
 
         <div class="menu">
+
+            <!-- Botão Hambúrguer -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
             <img src="../Assets/IMG/logo.png" alt="logo" width="130px">
 
@@ -31,7 +39,6 @@
                     <li class="item">
                         <a href="#">
                             <i class='bx bxs-crown'><span class="destaque">Premium</span></i>
-
                         </a>
                     </li>
 
@@ -62,7 +69,7 @@
     </header>
 
     <!-- MENU LATERAL -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
 
         <div class="menu-lateral">
 
@@ -103,13 +110,13 @@
                     </a>
                 </li>
 
-                <li >
+                <li>
                     <a href="#">
                         <img src="https://img.icons8.com/puffy-filled/20/ffffff/time-machine.png" alt="Histórico">
                         Histórico
                     </a>
                 </li>
-                
+
                 <li class="menu-list">
                     <a href="/Frontend/Pages/login.html">
                         <img src="https://img.icons8.com/ios/20/ffffff/import.png" alt="login">
@@ -117,32 +124,33 @@
                     </a>
                 </li>
 
+                <!-- PREMIUM -->
+                <div class="premium-box">
 
+                    <h2>
+                        <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
+                        Seja Premium
+                    </h2>
 
-            <!-- PREMIUM -->
-            <div class="premium-box">
+                    <p>
+                        Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
+                    </p>
 
-                <h2>
-                    <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
-                    Seja Premium
-                </h2>
+                    <button>Assine agora</button>
 
-                <p>
-                    Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                </p>
+                </div>
 
-                <button>Assine agora</button>
+            </ul>
 
-            </div>
         </div>
+
     </aside>
 
     <section>
 
-         <div class="container-anime">
-        <div class="imagem"><img src="../Assets/IMG/Tunnel.jpg" alt="Re:zero"></div>
+        <div class="container-anime">
+            <div class="imagem"><img src="../Assets/IMG/Tunnel.jpg" alt="Re:zero"></div>
 
-       
             <div class="info-ani">
                 <div class="anime-novo">
                     <h1>O universo começa agora!</h1>
@@ -152,52 +160,52 @@
                     <p>A história acompanha dois jovens estudantes, Kaoru e Anzu, que descobrem o misterioso Túnel Urashima — um lugar capaz de realizar o maior desejo de quem entra nele. O problema é o preço: para cada segundo dentro do túnel, anos se passam no mundo real. Juntos, eles investigam o local para tentar recuperar o que perderam, enfrentando o dilema entre os seus desejos e o tempo de suas vidas.</p>
                 </div>
 
-                  <div class="botao-assistir">
-                 <div class="Assistir">
+                <div class="botao-assistir">
+                    <div class="Assistir">
                         <button class="assit"><a href="#">Assistir agora</a></button>
-                    
-                         <button class="favoritos"><a href="#"><img src="https://img.icons8.com/external-inkubators-basic-outline-inkubators/16/external-plus-sign-it-and-computer-inkubators-basic-outline-inkubators.png" alt="sinal de adição"> Adicionar aos favoritos</a></button>
-                   </div>
-             </div>
+                        <button class="favoritos"><a href="#"><img src="https://img.icons8.com/external-inkubators-basic-outline-inkubators/16/external-plus-sign-it-and-computer-inkubators-basic-outline-inkubators.png" alt="sinal de adição"> Adicionar aos favoritos</a></button>
+                    </div>
+                </div>
             </div>   
         </div>
     </section>
-<hr class="linha">
-        <section class="conteudo-info">
-           <div>
-                <div class="info">
-                    <h2>Informações</h2>
-                </div>
-                <div class="info-anime">
-                    <h4>Estúdio</h4>
-                    <p>Pony Canyon / CLAP</p>
-                </div>
-                <div class="info-anime">
-                    <h4>Diretor</h4>
-                    <p>Tomahisa Taguchi</p>
-                </div>
-                <div class="info-anime">
-                    <h4>Gênero</h4>
-                    <p>Drama, Romance, Ficção cientifica, Sobrenatural.</p>
-                </div>
-                <div class="info-anime">
-                    <h4>Status</h4>
-                    <p>Finalizado</p>
-                </div>
-                <div class="info-anime">
-                    <h4>Lançamento</h4>
-                    <p>09/09/2022 (Japão) </p>
-                </div>
-           </div>
 
+    <hr class="linha">
 
-        </section>
-<hr class="linha">
+    <section class="conteudo-info">
+        <div>
+            <div class="info">
+                <h2>Informações</h2>
+            </div>
+            <div class="info-anime">
+                <h4>Estúdio</h4>
+                <p>Pony Canyon / CLAP</p>
+            </div>
+            <div class="info-anime">
+                <h4>Diretor</h4>
+                <p>Tomahisa Taguchi</p>
+            </div>
+            <div class="info-anime">
+                <h4>Gênero</h4>
+                <p>Drama, Romance, Ficção cientifica, Sobrenatural.</p>
+            </div>
+            <div class="info-anime">
+                <h4>Status</h4>
+                <p>Finalizado</p>
+            </div>
+            <div class="info-anime">
+                <h4>Lançamento</h4>
+                <p>09/09/2022 (Japão)</p>
+            </div>
+        </div>
+    </section>
 
-            <div class="text-seme"><h2>Animes Semelhantes</h2></div>
-       
-        <section>
-<div class="ani-cards">
+    <hr class="linha">
+
+    <div class="text-seme"><h2>Animes Semelhantes</h2></div>
+
+    <section>
+        <div class="ani-cards">
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG/Tunnel.jpg" alt="Filme o Tunnel"></a>
                 <p class="nome-ani">The Tunnel Summer</p>
@@ -207,36 +215,58 @@
                 <a href="#"><img src="/Frontend/Assets/IMG/your-name.jpg" alt="Filme o Tunnel"></a>
                 <p class="nome-ani">Kimi no Na wa</p>
             </div>
-            
 
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG/tenki-no-ko.jpg" alt="Filme o Tunnel"></a>
                 <p class="nome-ani">Tenki no Ko</p>
             </div>
-            
+
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG/suzume-Tojimari.jpg" alt="Filme o Tunnel"></a>
                 <p class="nome-ani">Suzume no Tojimari</p>
             </div>
-            
 
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG/Orange.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Toki wo Kakeru </p>
+                <p class="nome-ani">Toki wo Kakeru</p>
             </div>
 
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG//her-blue-sky.jpg" alt="Filme o Tunnel"></a>
-                <p class="nome-ani">Her blue sky </p>
+                <p class="nome-ani">Her blue sky</p>
             </div>
 
             <div class="card-ani">
                 <a href="#"><img src="/Frontend/Assets/IMG/koe-no-katachi.jpg" alt="Filme o Tunnel"></a>
                 <p class="nome-ani">Koe no katachi</p>
             </div>
-            </div>
-        </section>
-       
+        </div>
+    </section>
 
-    </body>
+    <!-- JAVASCRIPT EMBUTIDO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('menu-overlay');
+
+            // Só dispara a função quando o usuário clica no botão hambúrguer
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            }
+
+            // Fecha o menu se o usuário clicar no fundo/overlay
+            if (overlay) {
+                overlay.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+</body>
 </html>

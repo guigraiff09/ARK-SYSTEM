@@ -12,10 +12,18 @@
 
 <body>
 
+    <!-- Overlay escuro ao abrir menu mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
     <!-- HEADER -->
     <header class="header-box">
 
         <div class="menu">
+
+            <!-- Botão Hambúrguer -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
             <img src="../Assets/IMG/logo.png" alt="logo" width="130px">
 
@@ -31,7 +39,6 @@
                     <li class="item">
                         <a href="#">
                             <i class='bx bxs-crown'><span class="destaque">Premium</span></i>
-
                         </a>
                     </li>
 
@@ -62,7 +69,7 @@
     </header>
 
     <!-- MENU LATERAL -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
 
         <div class="menu-lateral">
 
@@ -117,113 +124,135 @@
                     </a>
                 </li>
 
+                <!-- PREMIUM -->
+                <div class="premium-box">
 
+                    <h2>
+                        <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
+                        Seja Premium
+                    </h2>
 
-            <!-- PREMIUM -->
-            <div class="premium-box">
+                    <p>
+                        Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
+                    </p>
 
-                <h2>
-                    <img src="https://img.icons8.com/parakeet-line/20/ffffff/crown.png" alt="coroa">
-                    Seja Premium
-                </h2>
+                    <button>Assine agora</button>
 
-                <p>
-                    Tenha acesso exclusivo, sem anúncios e com qualidade máxima!
-                </p>
+                </div>
 
-                <button>Assine agora</button>
+            </ul>
 
-            </div>
         </div>
+
     </aside>
 
     <div class="top-melhor"><h1>Top Melhores Animes</h1></div>
 
     <header class="menu-top">
         <ul class="top-anime">
-            <li class="list-top"><a href="/Frontend/Pages/top-anime.html">Está semana</a></li>
+            <li class="list-top"><a href="/Frontend/Pages/top-anime.html">Esta semana</a></li>
             <li class="list-top-2"><a href="/Frontend/Pages/top-mes.html">Este Mês</a></li>
             <li class="list-top"><a href="/Frontend/Pages/todo-periodo.html">Todos os Tempos</a></li>
         </ul>
     </header>
-     
+
     <section class="top-ani">
-      
-         <div class="top-box">
-             <div class="posicao"><h2>1</h2></div>
-                   <a href="#"> <img src="/Frontend/Assets/IMG/SoloLeving.png" alt="SoloLeving" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Solo Leving</h3></div>
-                     <div class="episodio"><h4>25 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.3</h3> </div>
-         </div>
 
-           <div class="top-box">
-             <div class="posicao"><h2>2</h2></div>
-                    <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="demon-slayer" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Demon Slayer</h3></div>
-                     <div class="episodio"><h4>63 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>1</h2></div>
+            <a href="#"> <img src="/Frontend/Assets/IMG/SoloLeving.png" alt="SoloLeving" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Solo Leving</h3></div>
+                <div class="episodio"><h4>25 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.3</h3> </div>
+        </div>
 
-          <div class="top-box">
-             <div class="posicao"><h2>3</h2></div>
-                   <a href="#"><img src="/Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="ataque-dos-titãs" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Attack on Titan</h3></div>
-                     <div class="episodio"><h4>87 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.5</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>2</h2></div>
+            <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="demon-slayer" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Demon Slayer</h3></div>
+                <div class="episodio"><h4>63 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
+        </div>
 
-          <div class="top-box">
-             <div class="posicao"><h2>4</h2></div>
-                   <a href="#"><img src="/Frontend/Assets/IMG/freiren.jpg" alt="freiren" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Freieren</h3></div>
-                     <div class="episodio"><h4>38 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.6</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>3</h2></div>
+            <a href="#"><img src="/Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="ataque-dos-titãs" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Attack on Titan</h3></div>
+                <div class="episodio"><h4>87 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.5</h3> </div>
+        </div>
 
-          <div class="top-box">
-             <div class="posicao"><h2>5</h2></div>
-                   <a href="#"> <img src="/Frontend/Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Chainsaw Man</h3></div>
-                     <div class="episodio"><h4>12 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.2</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>4</h2></div>
+            <a href="#"><img src="/Frontend/Assets/IMG/freiren.jpg" alt="freiren" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Freieren</h3></div>
+                <div class="episodio"><h4>38 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.6</h3> </div>
+        </div>
 
-         <div class="top-box">
-             <div class="posicao"><h2>6</h2></div>
-                    <a href="#"><img src="/Frontend/Assets/IMG/the-apolicard.jpg" alt=" The Apothecary" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>The Apothecary</h3></div>
-                     <div class="episodio"><h4>12 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"><h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>5</h2></div>
+            <a href="#"> <img src="/Frontend/Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Chainsaw Man</h3></div>
+                <div class="episodio"><h4>12 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.2</h3> </div>
+        </div>
 
-         <div class="top-box">
-             <div class="posicao"><h2>7</h2></div>
-                   <a href="#"> <img src="/Frontend/Assets/IMG/vinland-saga.jpg" alt="Vinland Saga" class="image-top"></a>
-                    <div class="conteudo-anim">
-                     <div class="top-nome"><h3>Vinland Saga</h3></div>
-                     <div class="episodio"><h4>48 Episódios</h4></div>
-                    </div>
-                    <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
-         </div>
+        <div class="top-box">
+            <div class="posicao"><h2>6</h2></div>
+            <a href="#"><img src="/Frontend/Assets/IMG/the-apolicard.jpg" alt=" The Apothecary" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>The Apothecary</h3></div>
+                <div class="episodio"><h4>12 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"><h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
+        </div>
 
+        <div class="top-box">
+            <div class="posicao"><h2>7</h2></div>
+            <a href="#"> <img src="/Frontend/Assets/IMG/vinland-saga.jpg" alt="Vinland Saga" class="image-top"></a>
+            <div class="conteudo-anim">
+                <div class="top-nome"><h3>Vinland Saga</h3></div>
+                <div class="episodio"><h4>48 Episódios</h4></div>
+            </div>
+            <div class="avaliacao"> <h3 class="ava"><i class='bx bxs-star'></i>4.4</h3> </div>
+        </div>
 
-
-         
-      
     </section>
-    
-    </body>
-    </html>
+
+    <!-- JAVASCRIPT EMBUTIDO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('menu-overlay');
+
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            }
+
+            if (overlay) {
+                overlay.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
+</body>
+
+</html>

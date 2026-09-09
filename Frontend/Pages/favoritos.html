@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Explorar</title>
 </head>
 
 <body>
 
+    <!-- Overlay escuro ao abrir menu mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
     <!-- HEADER -->
     <header class="header-box">
 
         <div class="menu">
+
+            <!-- Botão Hambúrguer -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
             <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
 
@@ -60,7 +68,7 @@
     </header>
 
     <!-- MENU LATERAL -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
 
         <div class="menu-lateral">
 
@@ -115,7 +123,6 @@
                     </a>
                 </li>
 
-
                 <!-- PREMIUM -->
                 <div class="premium-box">
 
@@ -131,12 +138,20 @@
                     <button>Assine agora</button>
 
                 </div>
+
+            </ul>
+
         </div>
+
     </aside>
 
     <section>
         <div class="favo-meus">
-            <div class="meus-favo"><h2>Meus Favoritos</h2></div>
+
+            <div class="meus-favo">
+                <h2>Meus Favoritos</h2>
+            </div>
+
             <aside class="menu-favo">
                 <ul class="favo-list">
                     <li class="favo-text1"><a href="/Frontend/Pages/favoritos.html">Anime</a></li>
@@ -146,65 +161,92 @@
 
             <div class="card-favo">
 
-                 <div class="favo-card"> 
+                <div class="favo-card">
                     <a href="#"><img src="/Frontend/Assets/IMG/SoloLeving.png" alt="SoloLeving"></a>
                     <div class="info-favo">
                         <h3>Solo Leving</h3>
                         <h4>25 Episódios</h4>
                     </div>
-                    </div>
-            
-            <div class="favo-card"> 
-                   <a href="#"> <img src="/Frontend/Assets/IMG/bleach.jpg" alt="bleach"></a>
+                </div>
+
+                <div class="favo-card">
+                    <a href="#"><img src="/Frontend/Assets/IMG/bleach.jpg" alt="bleach"></a>
                     <div class="info-favo">
                         <h3>Bleach</h3>
                         <h4>366 Episódios</h4>
                     </div>
-            </div>
+                </div>
 
-             <div class="favo-card"> 
-                   <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="demon-slayer"></a>
+                <div class="favo-card">
+                    <a href="#"><img src="/Frontend/Assets/IMG/demon-slayer.jpg" alt="demon-slayer"></a>
                     <div class="info-favo">
                         <h3>Demon Slayer</h3>
                         <h4>63 Episódios</h4>
                     </div>
-            </div>
+                </div>
 
-             <div class="favo-card"> 
+                <div class="favo-card">
                     <a href="#"><img src="/Frontend/Assets/IMG/ataque-dos-titãs.webp" alt="ataque-dos-titãs"></a>
                     <div class="info-favo">
                         <h3>Attaque on Titan</h3>
                         <h4>87 Episódios</h4>
                     </div>
-            </div>
+                </div>
 
-             <div class="favo-card"> 
+                <div class="favo-card">
                     <a href="#"><img src="/Frontend/Assets/IMG/Dandan.jpg" alt="Dandan"></a>
                     <div class="info-favo">
                         <h3>Dandadan</h3>
                         <h4>24 Episódios</h4>
                     </div>
-            </div>
+                </div>
 
-             <div class="favo-card"> 
+                <div class="favo-card">
                     <a href="#"><img src="/Frontend/Assets/IMG/Black-Clover.jpg" alt="Black-Clover"></a>
                     <div class="info-favo">
                         <h3>Black Clover</h3>
                         <h4>170 Episódios</h4>
                     </div>
-            </div>
+                </div>
 
-             <div class="favo-card"> 
+                <div class="favo-card">
                     <a href="#"><img src="/Frontend/Assets/IMG/Necromance.jpg" alt="Necromance"></a>
                     <div class="info-favo">
                         <h3>Dead Mount Death</h3>
                         <h4>25 Episódios</h4>
                     </div>
+                </div>
+
             </div>
 
-           </div>
-
-           
+        </div>
     </section>
+
+    <!-- JAVASCRIPT EMBUTIDO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuToggle = document.getElementById('menu-toggle');
+            const sidebar = document.getElementById('sidebar');
+            const overlay = document.getElementById('menu-overlay');
+
+            // Abre/fecha o menu ao clicar no botão hambúrguer
+            if (menuToggle) {
+                menuToggle.addEventListener('click', () => {
+                    sidebar.classList.toggle('active');
+                    overlay.classList.toggle('active');
+                });
+            }
+
+            // Fecha o menu ao clicar fora dele (no overlay)
+            if (overlay) {
+                overlay.addEventListener('click', () => {
+                    sidebar.classList.remove('active');
+                    overlay.classList.remove('active');
+                });
+            }
+        });
+    </script>
+
 </body>
+
 </html>

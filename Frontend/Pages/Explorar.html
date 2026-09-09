@@ -5,16 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Explorar</title>
 </head>
 
 <body>
 
+    <!-- Overlay escuro ao abrir menu mobile -->
+    <div class="menu-overlay" id="menu-overlay"></div>
+
     <!-- HEADER -->
     <header class="header-box">
 
         <div class="menu">
+
+            <!-- Botão Hambúrguer -->
+            <div class="menu-toggle" id="menu-toggle">
+                <i class='bx bx-menu'></i>
+            </div>
 
             <img src="/Frontend/Assets/IMG/logo.png" alt="logo" width="130px">
 
@@ -60,7 +68,7 @@
     </header>
 
     <!-- MENU LATERAL -->
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
 
         <div class="menu-lateral">
 
@@ -115,7 +123,6 @@
                     </a>
                 </li>
 
-
                 <!-- PREMIUM -->
                 <div class="premium-box">
 
@@ -131,6 +138,7 @@
                     <button>Assine agora</button>
 
                 </div>
+            </ul>
         </div>
     </aside>
 
@@ -191,9 +199,14 @@
                     <span class="badge-nota">4.8</span>
                     <a href="#"> <img src="../Assets/IMG/DragonBall- Z.jpg" alt="DragonBall"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">DragonBall Z</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">DragonBall Z</p>
+                    
                 </figure>
             </div>
         </section>
@@ -204,9 +217,14 @@
                     <span class="badge-nota">4.8</span>
                     <a href="#"> <img src="../Assets/IMG/flower.jpg" alt="flower"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
-                        <p class="nome-anime">Kaoru Hana</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Kaoru Hana</p>
+                        </div>
                     </figcaption>
+                    
                 </figure>
             </div>
         </section>
@@ -217,9 +235,14 @@
                     <span class="badge-nota">4.9</span>
                     <a href="#"> <img src="../Assets/IMG/Mushoku-Tensei.jpg" alt="Mushoku-Tensei"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Mushoku-Tensei</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">Mushoku-Tensei</p>
+                    
                 </figure>
             </div>
         </section>
@@ -230,9 +253,15 @@
                     <span class="badge-nota">4.3</span>
                     <a href="#"> <img src="../Assets/IMG/chainsaw-man.jpg" alt="chainsaw-man"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">ChainSaw-Man</p>
+                        </div>
+
                     </figcaption>
-                    <p class="nome-anime">ChainSaw-Man</p>
+                    
                 </figure>
             </div>
         </section>
@@ -243,91 +272,144 @@
                     <span class="badge-nota">4.6</span>
                     <a href="#"> <img src="../Assets/IMG/meninas.jpg" alt="Kanojo, Okarishimasu"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div><p class="nome-anime">Kanojo, Okarishimasu</p></div>
                     </figcaption>
-                    <p class="nome-anime">Kanojo, Okarishimasu</p>
+                    
                 </figure>
             </div>
         </section>
 
-         <section>
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">5.0</span>
-                    <a href="#"> <img src="../Assets/IMG/DragonBall-Super.jpg" alt=""DragonBall-Super></a>
+                    <a href="#"> <img src="../Assets/IMG/DragonBall-Super.jpg" alt="DragonBall-Super"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">DragonBall Super</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">DragonBall Super</p>
+                    
                 </figure>
             </div>
         </section>
 
-         <section>
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">5.0</span>
                     <a href="#"> <img src="../Assets/IMG/sword-art-online.jpg" alt="sword-art-online"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Sword art Online</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">Sword art Online</p>
+                    
                 </figure>
             </div>
         </section>
 
-         <section>
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
                     <a href="#"> <img src="../Assets/IMG/wind-breaker.jpg" alt="wind-breaker"></a>
                     <figcaption class="legenda">
                         <p class="temporada">1ª Temporada</p>
+                        <div>
+                        <p class="nome-anime">Wind Breaker</p>
+                    </div>
                     </figcaption>
-                    <p class="nome-anime">Wind Breaker</p>
+                    
                 </figure>
             </div>
         </section>
 
-         <section>
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.8</span>
                     <a href="#"> <img src="../Assets/IMG/medalist.jpg" alt="medalist"></a>
                     <figcaption class="legenda">
-                        <p class="temporada">1ª Temporada</p>
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Medalist</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">Medalist</p>
+                    
                 </figure>
             </div>
         </section>
 
-         <section>
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.9</span>
                     <a href="#"> <img src="../Assets/IMG/koe-no-katachi.jpg" alt="koe-no-katachi"></a>
                     <figcaption class="legenda">
+                        <div>
+                            <p class="temporada">Filme</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Koe no katachi</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">Koe no katachi</p>
+                    
                 </figure>
             </div>
         </section>
 
+        <section>
             <div class="animes">
                 <figure>
                     <span class="badge-nota">4.9</span>
                     <a href="#"> <img src="../Assets/IMG/enen-no-shouboutai.jpg" alt="enen-no-shouboutai"></a>
                     <figcaption class="legenda">
+                        <div>
+                            <p class="temporada">1ª Temporada</p>
+                        </div>
+                        <div>
+                            <p class="nome-anime">Enem no Shouboutai</p>
+                        </div>
                     </figcaption>
-                    <p class="nome-anime">Enem no Shouboutai</p>
+                    
                 </figure>
             </div>
         </section>
 
     </div>
 
+    <!-- SCRIPT DE NAVEGAÇÃO -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menu-toggle');
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('menu-overlay');
 
+    // Executa apenas ao clicar explicitamente no botão hambúrguer
+    menuToggle.addEventListener('click', () => {
+        sidebar.classList.toggle('active');
+        overlay.classList.toggle('active');
+    });
+
+    // Fecha o menu se o usuário clicar no overlay (fora do menu)
+    overlay.addEventListener('click', () => {
+        sidebar.classList.remove('active');
+        overlay.classList.remove('active');
+    });
+});
+    </script>
 </body>
 
 </html>
