@@ -243,7 +243,7 @@ Carrossel Principal
 
 .container-card {
     position: relative;
-    margin-top: 100px;
+    margin-top: 80px;
     margin-left: 250px;
     width: calc(100% - 250px);
     overflow: hidden;
@@ -300,9 +300,9 @@ figcaption {
     display: inline-block;
     border: 1px solid #7c3aed;
     color: #7c3aed;
-    padding: 6px 12px;
+    padding: 6px 10px;
     border-radius: 6px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 
 figcaption h1 {
@@ -313,7 +313,7 @@ figcaption h1 {
 .solo-p {
     color: #7c3aed;
     font-weight: 600;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .solo-p1 {
@@ -861,7 +861,7 @@ PÁGINA DOS MEUS FAVORITOS
     flex-wrap: wrap;
     gap: 15px 30px;
     padding: 20px 0;
-    width: calc(100% - 280px);
+    width: 100%;
 }
 
 .favo-card {
@@ -884,7 +884,7 @@ PÁGINA DOS MEUS FAVORITOS
 
 .info-favo {
     position: absolute;
-    bottom: 10px;
+    bottom: 6px;
     left: 5%;
     width: 90%;
     color: #ccc;
@@ -1045,7 +1045,7 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
     .sidebar {
         left: -100%;
         width: 250px;
-        top: 90px;
+        top: 80px;
     }
 
     .sidebar.active {
@@ -1078,15 +1078,20 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
     figcaption {
         left: 20px;
         max-width: 90%;
+        top: 180px;
     }
 
     figcaption h1 {
-        font-size: 1.8rem;
+        font-size: 1.4rem;
+        margin-bottom: 0;
     }
 
     .solo-p1 {
+        font-size: 0.6rem;
+        margin-bottom: 8px;
+    }
+    .solo-p{
         font-size: 0.8rem;
-        margin-bottom: 10px;
     }
 
     .buttons {
@@ -1095,13 +1100,18 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
 
     .button-assistir, .saiba {
         padding: 8px 12px;
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     .button-assistir i {
         font-size: 18px;
     }
-
+    .dest {
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
     /* Ajustes da Slider Wrapper e Cards no Mobile */
     .cards-slider-wrapper {
         margin-left: 0;
@@ -1286,4 +1296,46 @@ REGRAS MEDIA QUERIES - ADAPTAÇÃO PARA DISPOSITIVOS MÓVEIS (RESPONSIVO)
         object-fit: cover;
     }
 
+    /* responsivo na parte dos favoritos*/
+    .card-favo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px 30px;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.favo-card {
+    position: relative;
+    cursor: pointer;
+    padding: 20px 5px;
+    background: transparent;
+    transition: 0.3s ease;
+}
+
+.favo-card img {
+    width: 100px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 15px;
+    display: block;
+    cursor: pointer;
+}
+
+.favo-card:hover {
+    transform: scale(1.1);
+}
+
+.info-favo {
+    position: absolute;
+    bottom: 6px;
+    left: 5%;
+    width: 90%;
+    color: #ccc;
+    background-color: rgba(14, 14, 14, 0.8);
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 0.5rem;
+}
 }  
